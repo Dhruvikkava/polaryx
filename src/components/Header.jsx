@@ -6,12 +6,21 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = [
+  { name: "Home", path: "/" },
+  { name: "Products", path: "/products" },
+  { name: "About Us", path: "/about-us" },
+];
 
 function Header() {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -22,20 +31,26 @@ function Header() {
     setAnchorElNav(null);
   };
 
+  const handleNavigate = (path) => {
+    navigate(path);
+    handleCloseNavMenu();
+  };
+
   return (
-    <AppBar position="static" sx={{ py: 1, backgroundColor: "#ffffff99" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#ffffff" }}>
       <div className="container">
         <Toolbar disableGutters>
           <div className="d-flex justify-content-between align-items-center w-100">
+            {/* Logo */}
             <div>
               <Typography
                 variant="h6"
                 noWrap
                 component="a"
-                href="#app-bar-with-responsive-menu"
+                href="/"
                 sx={{
                   mr: 2,
-                  display: { xs: "none", md: "flex" },
+                  display: { xs: "flex" },
                   fontFamily: "monospace",
                   fontWeight: 700,
                   letterSpacing: ".3rem",
@@ -45,84 +60,80 @@ function Header() {
               >
                 LOGO
               </Typography>
-              <Typography
-                variant="h5"
-                noWrap
-                component="a"
-                href="#app-bar-with-responsive-menu"
-                sx={{
-                  mr: 2,
-                  display: { xs: "flex", md: "none" },
-                  flexGrow: 1,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
+            </div>
+
+            {/* Mobile Menu */}
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent: "end" }}>
+              <IconButton
+                size="large"
+                aria-label="menu"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+                sx={{ color: "#213650" }}
               >
-                LOGO
-              </Typography>
-            </div>
-            <div>
-              <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleOpenNavMenu}
-                  color="inherit"
-                >
-                  <MenuIcon />
-                </IconButton>
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorElNav}
-                  anchorOrigin={{
-                    vertical: "bottom",
-                    horizontal: "left",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "left",
-                  }}
-                  open={Boolean(anchorElNav)}
-                  onClose={handleCloseNavMenu}
-                  sx={{ display: { xs: "block", md: "none" } }}
-                >
-                  {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                      <Typography sx={{ textAlign: "center" }}>
-                        {page}
-                      </Typography>
-                    </MenuItem>
-                  ))}
-                </Menu>
-              </Box>
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{ display: { xs: "block", md: "none" } }}
+              >
                 {pages.map((page) => (
-                  <Button
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={{
-                      my: 2,
-                      mx: 1,
-                      color: "#303741",
-                      display: "block",
-                      fontSize: { xs: "14px", md: "15px" },
-                    }}
-                  >
-                    {page}
-                  </Button>
+                  <MenuItem key={page.name} onClick={() => handleNavigate(page.path)}>
+                    <Typography
+                      className={`font-weight-600 ${
+                        page.path === location.pathname ? "active active-underline" : ""
+                      }`}
+                      sx={{ textAlign: "center" }}
+                    >
+                      {page.name}
+                    </Typography>
+                  </MenuItem>
                 ))}
-              </Box>
-            </div>
+              </Menu>
+            </Box>
+
+            {/* Desktop Navigation (Using ListItemButton) */}
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: { md: "end" } }}>
+              <List sx={{ display: "flex", alignItems: "center", p: 0 }}>
+                {pages.map((page) => (
+                  <ListItem key={page.name} sx={{ pl: 3, pr: 0 }}>
+                    <ListItemButton
+                    disableRipple
+                      onClick={() => handleNavigate(page.path)}
+                      className={`font-weight-600 bg-transparent ${
+                        page.path === location.pathname ? "active active-underline" : ""
+                      }`}
+                      sx={{
+                        p: 0,
+                        color: "#213650",
+                        whiteSpace: "nowrap"
+                      }}
+                    >
+                      {page.name}
+                    </ListItemButton>
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
           </div>
         </Toolbar>
       </div>
     </AppBar>
   );
 }
+
 export default Header;

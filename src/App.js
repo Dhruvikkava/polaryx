@@ -7,8 +7,8 @@ import "./css/main.css";
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Routes>
           {routerList.map((item) => {
             return <Route path={item.path} element={item.element} />;
