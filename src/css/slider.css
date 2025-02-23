@@ -1,0 +1,41 @@
+.slider-container {
+  width: 80%;
+  margin: auto;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.home-slider .custom-arrow {
+  position: absolute;
+  top: -62px;
+  transform: translateY(-50%);
+  background: var(--primary-1);
+  color: var(--white-1);
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  border: 1px solid var(--primary-1);
+  transition: all 0.3s linear;
+}
+.home-slider .custom-arrow:hover {
+  background-color: var(--white-1);
+  color: var(--primary-1);
+}
+.home-slider .slick-list {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home-slider .next-arrow {
+  right: 20px;
+}
+.home-slider .prev-arrow {
+  right: 82px;
+}
+.home-slider .slider-head img {
+  width: 100px;
+  height: 100px;
+}

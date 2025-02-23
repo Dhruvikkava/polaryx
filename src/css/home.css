@@ -1,0 +1,134 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background-image: url("../images/hero-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-overlay);
+  z-index: 1;
+}
+.hero-overlay.overlay-light {
+  background: var(--background-overlay-light);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.hero-content-description {
+  font-size: 28px;
+}
+.hero-button {
+  border-radius: 20px;
+  padding: 8px 16px 8px 22px;
+  background-color: var(--primary-1);
+  color: var(--white-1);
+  transition: all 0.4s ease-in-out;
+  border-color: transparent;
+}
+.hero-button:hover {
+  background-color: var(--primary-2);
+  color: var(--primary-1);
+}
+.about-us-image {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  max-width: 500px;
+}
+.why-choose-us-image {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  max-width: 500px;
+}
+.about-us-image img {
+  height: 185px;
+  object-fit: cover;
+}
+.about-us-image .right {
+  border-left: 4px solid var(--white-1);
+}
+.about-us-image .bottom {
+  border-top: 4px solid var(--white-1);
+}
+.why-choose-us-list img {
+  background: var(--primary-1);
+  border-radius: 50%;
+  width: 40px;
+  padding: 7px;
+  filter: invert(1) grayscale(1) brightness(134%);
+}
+.achievement-image-wrap {
+  background-color: var(--primary-3);
+  border-radius: 50%;
+}
+.achievement-image-wrap .achievement-image {
+  width: 50px;
+  height: 50px;
+}
+.achievement-border-layer {
+  border: 1px dashed var(--primary-3);
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  padding: 3px;
+}
+.achievement-text {
+  color: var(--primary-3) !important;
+}
+.people-say-left {
+  width: 250px;
+  height: 450px;
+  background-color: var(--primary-4);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.home-product {
+  background-color: var(--primary-5);
+  margin-top: 70px;
+}
+.home-product .product-custom-image .tree1-img,
+.home-product .product-custom-image .tree2-img {
+  height: 300px;
+  width: 140px;
+}
+.home-product .MuiSvgIcon-root {
+  color: var(--black-2);
+}
+.home-product .product-custom-image .cloud {
+  height: 78px;
+  width: 140px;
+}
+.home-product .product-custom-image .tree1-img {
+  bottom: -40px;
+  right: 63px;
+}
+.home-product .product-custom-image .tree2-img {
+  bottom: -40px;
+  right: -21px;
+}
+.home-product .product-custom-image .cloud1-img {
+  bottom: -40px;
+  right: 180px;
+}
+.home-product .product-custom-image .plant-img {
+  bottom: -40px;
+  right: 360px;
+}
+.home-product .product-custom-image .cloud2-img {
+  right: 240px;
+  bottom: 120px;
+}
+.css-1mf9qzl-MuiButtonBase-root-MuiTabScrollButton-root.Mui-disabled {
+  display: none;
+}
