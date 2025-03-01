@@ -16,24 +16,18 @@ import {
   Paper,
 } from "@mui/material";
 import RadioButtonCheckedRoundedIcon from "@mui/icons-material/RadioButtonCheckedRounded";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import Progressbar from "../components/Progressbar";
 import Custombanner from "../components/Custombanner";
 import { productData } from "../constants";
 
 const ProductDetail = () => {
-  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const paramValue = searchParams.get("id");
   const filteredProduct = productData.find(
     (product) => product.id === Number(paramValue)
   );
   const data = filteredProduct?.chemicalData;
-  console.log("filteredProduct", filteredProduct);
-
-  if (!filteredProduct) {
-    navigate("/");
-  }
 
   return (
     <div className="page-wrapper">

@@ -1,13 +1,16 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import LogoImg from "../images/polaryx.svg";
+import LogoFooterImg from "../images/polaryx-footer.svg";
 
-const Logo = ({ className = "" }) => {
+const Logo = ({ className = "", isHeader = false }) => {
   return (
     <div className={`${className}`}>
       <Typography
         variant="h6"
         noWrap
         component="a"
+        className="d-flex align-items-center"
         href="/"
         sx={{
           mr: 2,
@@ -19,7 +22,12 @@ const Logo = ({ className = "" }) => {
           textDecoration: "none",
         }}
       >
-        LOGO
+        <img
+          className="logo-image"
+          src={isHeader ? LogoImg : LogoFooterImg}
+          alt="logo"
+        />
+        <p className="fw-bold ms-2 logo-image-text">Polaryx</p>
       </Typography>
     </div>
   );

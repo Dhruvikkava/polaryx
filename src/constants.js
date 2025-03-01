@@ -1224,6 +1224,68 @@ export const productData = [
     description:
       "Sodium Citrate Dihydrate is a versatile salt used as a pH regulator, buffering agent, and preservative in food, pharmaceuticals, and cosmetics. It enhances the stability of formulations and acts as an anticoagulant in medical applications.",
     page: ["Cosmetic"],
+    chemicalData: {
+      name: "Sodium Citrate Dihydrate",
+      formula: "C6H5Na3O7·2H2O",
+      molarMass: "294.10 g/mol",
+      casNumber: "6132-04-3",
+      appearance: "White, crystalline powder or granular",
+      odor: "Odorless",
+      solubility: "Highly soluble in water, insoluble in alcohol",
+      pH: "7.5 - 9.0 (5% solution)",
+      concentration: "Varies based on application, typically 99% purity",
+      applications: {
+        foodAndBeverage: [
+          "Used as a buffering agent, acidity regulator, and preservative in food and beverages",
+          "Commonly found in soft drinks, dairy products, and processed foods",
+        ],
+        pharmaceuticals: [
+          "Utilized as an anticoagulant in blood collection tubes",
+          "Serves as a stabilizer in pharmaceutical formulations",
+          "Acts as an alkalizing agent in medicinal syrups and effervescent tablets",
+        ],
+        cosmeticsAndPersonalCare: [
+          "Functions as a pH regulator in creams, lotions, and skincare products",
+          "Enhances product stability in cosmetic formulations",
+        ],
+        detergentsAndCleaning: [
+          "Used as a water softener in detergents to enhance cleaning efficiency",
+          "Prevents soap scum formation and improves lathering",
+        ],
+        industrialApplications: [
+          "Applied in metal cleaning and electroplating processes",
+          "Used in textile dyeing as a pH buffer",
+        ],
+      },
+      properties: [
+        { property: "Assay (Purity)", value: "≥ 99%" },
+        { property: "Loss on Drying", value: "10.0 - 13.0%" },
+        { property: "Heavy Metals", value: "≤ 10 ppm" },
+        { property: "Chlorides", value: "≤ 50 ppm" },
+        { property: "Sulphates", value: "≤ 150 ppm" },
+        { property: "Density", value: "1.7 g/cm³" },
+      ],
+      packaging: [
+        "Available in 25kg and 50kg HDPE bags with inner liner",
+        "Custom bulk packaging available upon request",
+      ],
+      storage: [
+        "Store in a cool, dry place away from moisture",
+        "Keep in tightly sealed containers to prevent caking",
+        "Avoid exposure to strong acids and oxidizing agents",
+      ],
+      safety: {
+        hazards: [
+          "Generally regarded as safe (GRAS) when used in food applications",
+          "Can cause mild irritation if inhaled or comes in contact with eyes",
+        ],
+        precautions: [
+          "Use protective gloves and goggles when handling in industrial applications",
+          "Ensure proper ventilation in storage and processing areas",
+          "Keep away from incompatible materials such as strong acids",
+        ],
+      },
+    },
   },
   {
     id: 18,
@@ -1231,6 +1293,67 @@ export const productData = [
     description:
       "Ascorbic Acid (Vitamin C) is a powerful antioxidant used in food, pharmaceuticals, and skincare. It boosts immunity, enhances collagen production, and prevents oxidation in food and beverages.",
     page: ["Cosmetic"],
+    chemicalData: {
+      name: "Ascorbic Acid",
+      formula: "C6H8O6",
+      molarMass: "176.12 g/mol",
+      casNumber: "50-81-7",
+      appearance: "White or slightly yellow crystalline powder",
+      odor: "Odorless",
+      solubility:
+        "Highly soluble in water, slightly soluble in alcohol, insoluble in chloroform and ether",
+      pH: "2.2 - 2.5 (5% solution)",
+      concentration: "Typically available in 99% purity",
+      applications: {
+        foodAndBeverage: [
+          "Used as a natural antioxidant and preservative in food and beverages",
+          "Commonly found in fruit juices, soft drinks, and processed foods",
+          "Enhances shelf life and prevents oxidation in food products",
+        ],
+        pharmaceuticals: [
+          "Essential vitamin supplement for preventing and treating scurvy",
+          "Used in pharmaceutical formulations for immune support and antioxidant properties",
+          "Applied in injectable solutions and effervescent tablets",
+        ],
+        cosmeticsAndPersonalCare: [
+          "Acts as an antioxidant in skincare products to protect against free radicals",
+          "Used in anti-aging creams, serums, and brightening treatments",
+          "Helps in collagen synthesis and skin repair",
+        ],
+        industrialApplications: [
+          "Utilized in photography as a developing agent",
+          "Used in water treatment as a reducing agent to remove chlorine",
+          "Applied in polymer and plastic manufacturing for stabilization",
+        ],
+      },
+      properties: [
+        { property: "Assay (Purity)", value: "≥ 99%" },
+        { property: "Melting Point", value: "190 - 192°C (decomposes)" },
+        { property: "Loss on Drying", value: "≤ 0.4%" },
+        { property: "Specific Rotation", value: "+20.5° to +21.5°" },
+        { property: "Heavy Metals", value: "≤ 10 ppm" },
+      ],
+      packaging: [
+        "Available in 25kg fiber drums or HDPE bags",
+        "Custom bulk packaging available upon request",
+      ],
+      storage: [
+        "Store in a cool, dry place away from direct sunlight and heat",
+        "Keep in tightly sealed containers to prevent degradation",
+        "Avoid exposure to moisture and strong oxidizing agents",
+      ],
+      safety: {
+        hazards: [
+          "Generally regarded as safe (GRAS) when used in food applications",
+          "Can cause mild irritation if inhaled or comes in contact with eyes",
+        ],
+        precautions: [
+          "Use protective gloves and goggles when handling in industrial applications",
+          "Ensure proper ventilation in storage and processing areas",
+          "Keep away from incompatible materials such as strong bases and oxidizers",
+        ],
+      },
+    },
   },
   {
     id: 19,
@@ -1238,6 +1361,70 @@ export const productData = [
     description:
       "Sodium Hypochlorite is a powerful disinfectant and bleaching agent widely used in water treatment, household cleaners, and sanitation. It effectively kills bacteria, viruses, and mold, making it essential for hygiene and industrial applications.",
     page: ["Purifier Agent"],
+    chemicalData: {
+      name: "Sodium Hypochlorite",
+      formula: "NaOCl",
+      molarMass: "74.44 g/mol",
+      casNumber: "7681-52-9",
+      appearance: "Pale greenish-yellow liquid",
+      odor: "Chlorine-like odor",
+      solubility: "Highly soluble in water",
+      pH: "10 - 12 (depending on concentration)",
+      concentration: "Typically available in 5-15% solutions",
+      applications: {
+        waterTreatment: [
+          "Used as a disinfectant for drinking water and wastewater treatment",
+          "Effective in removing bacteria, viruses, and algae",
+          "Helps in oxidation of organic contaminants",
+        ],
+        householdCleaning: [
+          "Commonly used as bleach for cleaning and stain removal",
+          "Disinfects surfaces and eliminates mold and mildew",
+        ],
+        industrialApplications: [
+          "Used in pulp and paper industry for bleaching",
+          "Applied in textile and detergent manufacturing",
+          "Used in food processing plants for sanitation",
+        ],
+        medical: [
+          "Utilized in hospitals as a surface disinfectant",
+          "Used in dental applications for root canal treatment",
+        ],
+      },
+      properties: [
+        {
+          property: "Density",
+          value: "1.1 - 1.2 g/cm³ (depending on concentration)",
+        },
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        {
+          property: "Decomposition",
+          value: "Slowly decomposes into sodium chloride and oxygen",
+        },
+        { property: "Oxidizing Potential", value: "Strong oxidizing agent" },
+      ],
+      packaging: [
+        "Available in 25L, 50L HDPE drums or bulk tankers",
+        "Custom packaging available upon request",
+      ],
+      storage: [
+        "Store in a cool, well-ventilated area away from direct sunlight",
+        "Keep in tightly sealed containers to prevent decomposition",
+        "Avoid contact with acids, ammonia, and organic materials",
+      ],
+      safety: {
+        hazards: [
+          "Can cause severe skin and eye irritation",
+          "Toxic if ingested or inhaled in high concentrations",
+          "Reacts with acids to produce toxic chlorine gas",
+        ],
+        precautions: [
+          "Wear protective gloves, goggles, and clothing when handling",
+          "Use in well-ventilated areas or under fume hoods",
+          "Avoid mixing with other household or industrial chemicals",
+        ],
+      },
+    },
   },
   {
     id: 20,
@@ -1245,6 +1432,64 @@ export const productData = [
     description:
       "Acetic Acid is an organic acid commonly used in food preservation, vinegar production, and industrial applications. It acts as a pH regulator, solvent, and antimicrobial agent in various industries, including food, pharmaceuticals, and textiles.",
     page: ["Purifier Agent"],
+    chemicalData: {
+      name: "Acetic Acid",
+      formula: "C₂H₄O₂",
+      molarMass: "60.05 g/mol",
+      casNumber: "64-19-7",
+      appearance: "Colorless liquid",
+      odor: "Strong, pungent vinegar-like odor",
+      solubility: "Completely miscible in water, ethanol, and ether",
+      pH: "2.4 (for a 1.0M solution)",
+      concentration: "Available in 5% to 99% solutions",
+      applications: {
+        industrial: [
+          "Used in the production of acetate esters and synthetic fibers",
+          "Essential in manufacturing acetic anhydride, vinyl acetate monomer, and terephthalic acid",
+        ],
+        foodIndustry: [
+          "Used as a food additive (E260) for flavor enhancement and preservation",
+          "Key ingredient in vinegar production",
+        ],
+        pharmaceuticals: [
+          "Used in the synthesis of various drugs and chemical intermediates",
+          "Applied in antiseptics and wound dressings",
+        ],
+        textiles: [
+          "Used in dyeing and finishing processes in textile manufacturing",
+        ],
+        waterTreatment: ["Acts as a pH adjuster in industrial water treatment"],
+      },
+      properties: [
+        { property: "Density", value: "1.049 g/cm³" },
+        { property: "Boiling Point", value: "118.1°C (244.6°F)" },
+        { property: "Melting Point", value: "16.6°C (61.9°F)" },
+        { property: "Flash Point", value: "39°C (102°F) – closed cup" },
+        { property: "Vapor Pressure", value: "15.7 mmHg at 20°C" },
+      ],
+      packaging: [
+        "Available in 25L, 50L HDPE drums",
+        "Also supplied in 200L barrels and bulk tankers",
+        "Custom packaging available on request",
+      ],
+      storage: [
+        "Store in a cool, well-ventilated area away from heat sources",
+        "Keep containers tightly closed to prevent vapor release",
+        "Avoid contact with strong oxidizers and bases",
+      ],
+      safety: {
+        hazards: [
+          "Highly corrosive and can cause severe burns",
+          "Irritating to the respiratory system",
+          "Highly flammable in concentrated forms",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and clothing",
+          "Ensure adequate ventilation when handling",
+          "Keep away from open flames and heat sources",
+        ],
+      },
+    },
   },
   {
     id: 21,
@@ -1252,6 +1497,71 @@ export const productData = [
     description:
       "Ammonium Hydroxide is a strong alkaline solution used in cleaning products, water treatment, and chemical manufacturing. It acts as a pH regulator, neutralizer, and household cleaner, effectively removing grease and stains.",
     page: ["Purifier Agent"],
+    chemicalData: {
+      name: "Ammonium Hydroxide",
+      formula: "NH₄OH",
+      molarMass: "35.05 g/mol",
+      casNumber: "1336-21-6",
+      appearance: "Colorless liquid",
+      odor: "Strong, pungent ammonia-like odor",
+      solubility: "Highly soluble in water",
+      pH: "11.6 - 12.0 (for a 1M solution)",
+      concentration: "Available in 5% to 30% solutions",
+      applications: {
+        industrial: [
+          "Used in the production of fertilizers, plastics, and rubber",
+          "Employed in the manufacturing of explosives and dyes",
+        ],
+        cleaning: [
+          "Commonly used in household and industrial cleaners",
+          "Acts as a degreaser for metal and glass surfaces",
+        ],
+        foodIndustry: [
+          "Used as a food additive (E527) to regulate acidity in food products",
+        ],
+        pharmaceuticals: [
+          "Utilized in medical laboratories for chemical synthesis",
+        ],
+        waterTreatment: [
+          "Used as a pH adjuster in water and wastewater treatment plants",
+        ],
+        textiles: [
+          "Employed in the textile industry for dyeing and fabric treatment",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "0.88 g/cm³ (for 28% solution)" },
+        { property: "Boiling Point", value: "37.7°C (100°F) – decomposes" },
+        { property: "Melting Point", value: "-57.5°C (-71.5°F)" },
+        {
+          property: "Flash Point",
+          value: "Not flammable, but vapors are irritating",
+        },
+        { property: "Vapor Pressure", value: "115 mmHg at 20°C" },
+      ],
+      packaging: [
+        "Available in 25L, 50L HDPE drums",
+        "Also supplied in 200L barrels and bulk tankers",
+        "Custom packaging available on request",
+      ],
+      storage: [
+        "Store in a cool, well-ventilated area away from acids",
+        "Keep containers tightly closed to prevent ammonia vapor escape",
+        "Avoid contact with oxidizing agents",
+      ],
+      safety: {
+        hazards: [
+          "Corrosive and can cause severe burns on skin and eyes",
+          "Inhalation of vapors may cause respiratory irritation",
+          "Reacts violently with acids and oxidizers",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and clothing",
+          "Ensure proper ventilation when handling",
+          "Store away from incompatible materials",
+        ],
+      },
+    },
   },
   {
     id: 22,
@@ -1259,6 +1569,74 @@ export const productData = [
     description:
       "Citric Acid is a natural acid widely used as a flavor enhancer, preservative, and pH regulator in food and beverages. It also serves as a cleaning agent and chelating agent in cosmetics, pharmaceuticals, and industrial applications.",
     page: ["Food & Beverages"],
+    chemicalData: {
+      name: "Citric Acid",
+      formula: "C₆H₈O₇",
+      molarMass: "192.12 g/mol",
+      casNumber: "77-92-9",
+      appearance: "White crystalline powder",
+      odor: "Odorless",
+      solubility: "Highly soluble in water (145 g/100 mL at 20°C)",
+      pH: "1.8 – 2.2 (for a 1% solution)",
+      concentration: "Available in anhydrous and monohydrate forms",
+      applications: {
+        foodIndustry: [
+          "Used as a food preservative and flavor enhancer (E330)",
+          "Commonly found in soft drinks, candies, and dairy products",
+          "Acts as a pH regulator in food processing",
+        ],
+        pharmaceuticals: [
+          "Used as an excipient in pharmaceutical formulations",
+          "Employed in effervescent tablets and syrups",
+        ],
+        cosmetics: [
+          "Acts as a pH adjuster in skincare and personal care products",
+          "Used in hair conditioners, shampoos, and bath products",
+        ],
+        cleaning: [
+          "Effective as a biodegradable cleaning agent",
+          "Removes limescale, rust, and mineral deposits",
+        ],
+        industrial: [
+          "Used in metal passivation and chelating applications",
+          "Employed in detergent and textile industries",
+        ],
+        waterTreatment: [
+          "Functions as a chelating agent for metal removal",
+          "Used in boiler cleaning solutions",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "1.665 g/cm³ (anhydrous)" },
+        { property: "Melting Point", value: "153°C (307°F)" },
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        { property: "Flash Point", value: "Non-flammable" },
+        {
+          property: "Molecular Structure",
+          value: "Tricarboxylic acid with three COOH groups",
+        },
+      ],
+      packaging: [
+        "Available in 25kg, 50kg HDPE bags with inner liner",
+        "Also supplied in bulk packaging as per customer requirements",
+      ],
+      storage: [
+        "Store in a cool, dry place away from moisture",
+        "Keep containers tightly closed to avoid clumping",
+        "Avoid exposure to direct sunlight and extreme temperatures",
+      ],
+      safety: {
+        hazards: [
+          "Can cause eye and skin irritation in high concentrations",
+          "Inhalation of dust may cause respiratory discomfort",
+        ],
+        precautions: [
+          "Use gloves and protective eyewear while handling",
+          "Ensure proper ventilation in storage and handling areas",
+          "Avoid inhaling dust; use a dust mask if necessary",
+        ],
+      },
+    },
   },
   {
     id: 23,
@@ -1266,6 +1644,73 @@ export const productData = [
     description:
       "Potassium Chloride is a vital electrolyte used in pharmaceuticals, food processing, and fertilizers. It helps maintain fluid balance in the body and serves as a potassium supplement and a salt substitute in food products.",
     page: ["Food & Beverages"],
+    chemicalData: {
+      name: "Potassium Chloride",
+      formula: "KCl",
+      molarMass: "74.55 g/mol",
+      casNumber: "7447-40-7",
+      appearance: "White crystalline powder or colorless crystals",
+      odor: "Odorless",
+      solubility:
+        "Soluble in water (34.2 g/100 mL at 20°C), insoluble in alcohol",
+      pH: "Neutral (pH ~7 in aqueous solution)",
+      concentration:
+        "Available in various purity grades (Industrial, Food, and Pharma)",
+      applications: {
+        agriculture: [
+          "Used as a potash fertilizer to enhance soil potassium levels",
+          "Essential for plant growth and crop yield improvement",
+        ],
+        pharmaceuticals: [
+          "Used in oral rehydration salts and electrolyte replacement therapy",
+          "Component of intravenous fluids for treating potassium deficiency",
+        ],
+        foodIndustry: [
+          "Used as a salt substitute in low-sodium foods",
+          "Functions as a preservative and flavor enhancer (E508)",
+        ],
+        industrial: [
+          "Utilized in the production of potassium-based chemicals",
+          "Used in water softening and de-icing applications",
+        ],
+        waterTreatment: [
+          "Used in water softeners to regenerate ion-exchange resins",
+          "Employed in brine solutions for water purification",
+        ],
+        laboratory: [
+          "Commonly used as a reagent in analytical chemistry",
+          "Component in buffer solutions and calibration standards",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "1.98 g/cm³" },
+        { property: "Melting Point", value: "770°C (1418°F)" },
+        { property: "Boiling Point", value: "1420°C (2588°F)" },
+        { property: "Crystal Structure", value: "Cubic" },
+        { property: "Refractive Index", value: "1.490" },
+      ],
+      packaging: [
+        "Available in 25kg and 50kg HDPE bags with inner liners",
+        "Can be supplied in bulk packaging as per customer requirements",
+      ],
+      storage: [
+        "Store in a cool, dry place away from moisture",
+        "Keep containers tightly closed to prevent caking",
+        "Avoid exposure to extreme temperatures and humidity",
+      ],
+      safety: {
+        hazards: [
+          "Non-toxic under normal conditions",
+          "High doses can cause hyperkalemia (excess potassium in blood)",
+          "May cause mild irritation to eyes and skin",
+        ],
+        precautions: [
+          "Wear protective gloves and eyewear while handling",
+          "Avoid inhaling dust; use a mask if necessary",
+          "Keep away from incompatible materials like strong acids",
+        ],
+      },
+    },
   },
   {
     id: 24,
@@ -1273,6 +1718,69 @@ export const productData = [
     description:
       "Acrylic Acid is a key raw material used in the production of adhesives, coatings, and superabsorbent polymers. It provides strong adhesion, durability, and water absorption properties, making it essential in industrial and consumer applications.",
     page: ["Food & Beverages", "Solvents"],
+    chemicalData: {
+      name: "Acrylic Acid",
+      formula: "C3H4O2",
+      molarMass: "72.06 g/mol",
+      casNumber: "79-10-7",
+      appearance: "Colorless liquid",
+      odor: "Acrid, pungent odor",
+      solubility: "Miscible in water, alcohols, and ethers",
+      pH: "Acidic",
+      concentration:
+        "Available in various purity grades (Industrial, Technical, and High Purity)",
+      applications: {
+        polymersAndResins: [
+          "Used as a monomer in the production of acrylic polymers and copolymers",
+          "Manufactures superabsorbent polymers (SAP) used in hygiene products",
+        ],
+        adhesivesAndSealants: [
+          "Component in adhesives, coatings, and sealants for enhanced adhesion",
+          "Improves water resistance and durability in industrial adhesives",
+        ],
+        textilesAndLeather: [
+          "Used in textile finishes to improve durability and water repellency",
+          "Enhances flexibility and wear resistance in leather treatments",
+        ],
+        waterTreatment: [
+          "Used in water-soluble polymers for scale and corrosion control",
+          "Employed in dispersants and thickeners for industrial water treatment",
+        ],
+        paintsAndCoatings: [
+          "Enhances adhesion and gloss in paints and protective coatings",
+          "Provides weather resistance in exterior and automotive coatings",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "1.05 g/cm³" },
+        { property: "Melting Point", value: "13°C (55°F)" },
+        { property: "Boiling Point", value: "141°C (286°F)" },
+        { property: "Flash Point", value: "50°C (122°F) (closed cup)" },
+        { property: "Vapor Pressure", value: "3.8 mmHg at 20°C" },
+      ],
+      packaging: [
+        "Available in 200kg HDPE drums",
+        "Supplied in bulk tankers for industrial use",
+        "Customized packaging available upon request",
+      ],
+      storage: [
+        "Store in a cool, dry, and well-ventilated area",
+        "Keep away from heat, open flames, and direct sunlight",
+        "Use inhibitors to prevent unwanted polymerization",
+      ],
+      safety: {
+        hazards: [
+          "Highly corrosive to skin and eyes",
+          "Flammable and reactive with oxidizers",
+          "Can cause respiratory irritation if inhaled",
+        ],
+        precautions: [
+          "Wear protective gloves, goggles, and clothing",
+          "Ensure proper ventilation in handling areas",
+          "Avoid prolonged exposure; use a respirator if necessary",
+        ],
+      },
+    },
   },
   {
     id: 25,
@@ -1280,6 +1788,68 @@ export const productData = [
     description:
       "Citric Acid Monohydrate is a versatile acid used as a preservative, pH regulator, and flavor enhancer in food, beverages, and pharmaceuticals. It also serves as a chelating agent in cosmetics, detergents, and industrial applications.",
     page: ["Food & Beverages"],
+    chemicalData: {
+      name: "Citric Acid Monohydrate",
+      formula: "C6H8O7·H2O",
+      molarMass: "210.14 g/mol",
+      casNumber: "5949-29-1",
+      appearance: "White crystalline powder or granular",
+      odor: "Odorless",
+      solubility: "Highly soluble in water, ethanol, and alcohol",
+      pH: "1.8 – 2.2 (5% aqueous solution)",
+      concentration:
+        "Available in various purity grades (Food, Pharmaceutical, and Industrial)",
+      applications: {
+        foodAndBeverages: [
+          "Used as an acidulant and pH regulator in beverages, candies, and processed foods",
+          "Acts as a preservative to enhance shelf life",
+          "Enhances flavor in soft drinks, jams, and sauces",
+        ],
+        pharmaceuticals: [
+          "Used in effervescent tablets and syrups as an acidity regulator",
+          "Acts as a stabilizer in vitamin and mineral supplements",
+        ],
+        cosmeticsAndPersonalCare: [
+          "Functions as a pH adjuster in skincare and beauty products",
+          "Used in shampoos and conditioners for chelating properties",
+        ],
+        cleaningAndDetergents: [
+          "Acts as a descaler in household and industrial cleaning products",
+          "Used in dishwashing liquids to remove mineral deposits",
+        ],
+        waterTreatment: [
+          "Used as a chelating agent to prevent metal ion buildup in water systems",
+          "Enhances efficiency of industrial water softeners",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "1.54 g/cm³" },
+        { property: "Melting Point", value: "135-152°C (275-306°F)" },
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        { property: "Solubility in Water", value: "144g/100mL at 20°C" },
+      ],
+      packaging: [
+        "Available in 25kg and 50kg bags",
+        "Supplied in bulk quantities for industrial use",
+        "Custom packaging available upon request",
+      ],
+      storage: [
+        "Store in a cool, dry, and well-ventilated area",
+        "Keep away from moisture and direct sunlight",
+        "Use sealed containers to prevent contamination",
+      ],
+      safety: {
+        hazards: [
+          "Mildly irritating to eyes and skin",
+          "Can cause respiratory discomfort if inhaled in large amounts",
+        ],
+        precautions: [
+          "Wear protective gloves and goggles when handling large quantities",
+          "Ensure proper ventilation in storage and handling areas",
+          "Avoid direct contact with skin and eyes",
+        ],
+      },
+    },
   },
   {
     id: 26,
@@ -1287,6 +1857,67 @@ export const productData = [
     description:
       "Dextrose Anhydrous is a simple sugar used as a sweetener, energy source, and pharmaceutical excipient. It is commonly found in food, beverages, and medical applications like oral rehydration solutions and IV fluids.",
     page: ["Food & Beverages"],
+    chemicalData: {
+      name: "Dextrose Anhydrous",
+      formula: "C6H12O6",
+      molarMass: "180.16 g/mol",
+      casNumber: "50-99-7",
+      appearance: "White crystalline powder",
+      odor: "Odorless",
+      solubility: "Highly soluble in water, slightly soluble in ethanol",
+      pH: "4.0 – 6.5 (10% solution in water)",
+      concentration:
+        "Available in food-grade, pharmaceutical-grade, and industrial-grade",
+      applications: {
+        foodAndBeverages: [
+          "Used as a sweetener and energy source in beverages, bakery products, and dairy items",
+          "Acts as a fermentable sugar in brewing and confectionery",
+          "Used in processed foods as a bulking agent",
+        ],
+        pharmaceuticals: [
+          "Used in intravenous (IV) solutions for hydration and energy supply",
+          "Acts as a carrier for medicine formulations in tablets and syrups",
+        ],
+        personalCareAndCosmetics: [
+          "Functions as a humectant in skincare products",
+          "Used in oral care formulations as a mild sweetener",
+        ],
+        animalFeed: [
+          "Added as an energy source in livestock and pet food formulations",
+        ],
+        industrialApplications: [
+          "Used in fermentation processes for bioethanol production",
+          "Serves as a raw material in biochemical and microbiological research",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "1.56 g/cm³" },
+        { property: "Melting Point", value: "146°C (295°F)" },
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        { property: "Solubility in Water", value: "909 g/L at 25°C" },
+      ],
+      packaging: [
+        "Available in 25kg and 50kg bags",
+        "Supplied in bulk for industrial use",
+        "Custom packaging available upon request",
+      ],
+      storage: [
+        "Store in a cool, dry place away from moisture",
+        "Keep in airtight containers to prevent caking",
+        "Protect from direct sunlight and extreme temperatures",
+      ],
+      safety: {
+        hazards: [
+          "Generally recognized as safe (GRAS) for food and pharmaceutical use",
+          "Excessive consumption may lead to hyperglycemia",
+        ],
+        precautions: [
+          "Avoid inhalation of powder to prevent respiratory discomfort",
+          "Store away from strong oxidizing agents",
+          "Ensure proper handling in food and pharma environments",
+        ],
+      },
+    },
   },
   {
     id: 27,
@@ -1294,6 +1925,71 @@ export const productData = [
     description:
       "Glycerin is a versatile humectant and moisturizer widely used in cosmetics, pharmaceuticals, and food products. It helps retain moisture, improves skin hydration, and acts as a solvent in various formulations.",
     page: ["Food & Beverages", "Solvents"],
+    chemicalData: {
+      name: "Glycerin (Glycerol)",
+      formula: "C3H8O3",
+      molarMass: "92.09 g/mol",
+      casNumber: "56-81-5",
+      appearance: "Clear, colorless, and viscous liquid",
+      odor: "Odorless",
+      solubility: "Fully miscible with water, soluble in alcohol and acetone",
+      pH: "5.5 – 7.5 (10% solution in water)",
+      concentration:
+        "Available in pharmaceutical, food, and industrial grades with purity levels up to 99.5%",
+      applications: {
+        pharmaceuticals: [
+          "Used as a humectant in cough syrups and oral solutions",
+          "Acts as a lubricant in eye drops and suppositories",
+          "Used in skin care ointments and creams",
+        ],
+        foodAndBeverages: [
+          "Functions as a sweetener and moisture-retaining agent",
+          "Used in bakery products, beverages, and confectionery",
+          "Acts as a solvent for food flavors and colors",
+        ],
+        cosmeticsAndPersonalCare: [
+          "Used in skincare products as a moisturizing agent",
+          "Added to soaps, shampoos, and toothpaste for smooth texture",
+          "Functions as a skin-conditioning agent in lotions",
+        ],
+        industrialApplications: [
+          "Used in the production of resins, paints, and coatings",
+          "Serves as an antifreeze agent in automotive and industrial applications",
+          "Used in the manufacture of explosives (e.g., nitroglycerin)",
+        ],
+        animalFeed: [
+          "Added as an energy source in livestock feed",
+          "Used as a binder in pet food formulations",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "1.26 g/cm³" },
+        { property: "Boiling Point", value: "290°C (554°F)" },
+        { property: "Melting Point", value: "18°C (64°F)" },
+        { property: "Viscosity", value: "1.412 Pa·s at 25°C" },
+      ],
+      packaging: [
+        "Available in 250mL, 500mL, 1L bottles for pharmaceutical and cosmetic use",
+        "Supplied in 25kg and 200kg drums for industrial applications",
+        "Bulk shipments available in IBC tanks and tankers",
+      ],
+      storage: [
+        "Store in a cool, dry, and well-ventilated area",
+        "Keep away from direct sunlight and heat sources",
+        "Use tightly sealed containers to prevent moisture absorption",
+      ],
+      safety: {
+        hazards: [
+          "Generally recognized as safe (GRAS) for food and pharmaceutical applications",
+          "Non-toxic but may cause mild irritation if inhaled or in contact with eyes",
+        ],
+        precautions: [
+          "Avoid contact with strong oxidizing agents",
+          "Handle with care to prevent spills and contamination",
+          "Use personal protective equipment (PPE) in industrial settings",
+        ],
+      },
+    },
   },
   {
     id: 28,
@@ -1301,6 +1997,74 @@ export const productData = [
     description:
       "Sodium Bicarbonate, commonly known as baking soda, is a versatile compound used as a leavening agent, pH regulator, and cleaning agent. It is widely utilized in baking, pharmaceuticals, and household cleaning products.",
     page: ["Food & Beverages"],
+    chemicalData: {
+      name: "Sodium Bicarbonate",
+      formula: "NaHCO₃",
+      molarMass: "84.01 g/mol",
+      casNumber: "144-55-8",
+      appearance: "White crystalline powder or granules",
+      odor: "Odorless",
+      solubility: "Soluble in water (96 g/L at 20°C), insoluble in alcohol",
+      pH: "8.3 (1% solution in water)",
+      concentration:
+        "Available in different purity grades: food grade, pharmaceutical grade, industrial grade",
+      applications: {
+        foodAndBeverages: [
+          "Used as a leavening agent in baking",
+          "Regulates pH in food and beverages",
+          "Acts as an anti-caking agent in processed foods",
+        ],
+        pharmaceuticals: [
+          "Used as an antacid to relieve heartburn and acid indigestion",
+          "Serves as an active ingredient in effervescent tablets",
+          "Used in hemodialysis solutions for blood pH regulation",
+        ],
+        personalCareAndCosmetics: [
+          "Added in toothpaste and mouthwash for oral care",
+          "Used in deodorants and bath products as an odor neutralizer",
+          "Functions as an exfoliating agent in skincare products",
+        ],
+        industrialApplications: [
+          "Used in fire extinguishers as a dry chemical agent",
+          "Serves as a pH buffer in water treatment processes",
+          "Acts as a mild abrasive in cleaning products",
+        ],
+        animalFeed: [
+          "Used as a dietary supplement to regulate pH in livestock feed",
+          "Aids in digestion and improves feed efficiency in dairy cattle",
+        ],
+      },
+      properties: [
+        { property: "Density", value: "2.2 g/cm³" },
+        { property: "Melting Point", value: "Decomposes at 50°C" },
+        {
+          property: "Decomposition Temperature",
+          value: "Above 60°C (releases CO₂)",
+        },
+        { property: "Solubility", value: "9 g/100mL in water at 20°C" },
+      ],
+      packaging: [
+        "Available in 25kg and 50kg bags for industrial use",
+        "Supplied in 1kg and 5kg packs for food and pharmaceutical applications",
+        "Bulk shipments available in IBCs and tankers",
+      ],
+      storage: [
+        "Store in a cool, dry, and well-ventilated area",
+        "Keep away from acids and moisture to prevent degradation",
+        "Use tightly sealed containers to avoid contamination",
+      ],
+      safety: {
+        hazards: [
+          "Generally considered non-toxic",
+          "May cause mild irritation to eyes and skin on prolonged exposure",
+        ],
+        precautions: [
+          "Avoid inhalation of dust",
+          "Use gloves and goggles when handling large quantities",
+          "Store away from strong acids to prevent carbon dioxide release",
+        ],
+      },
+    },
   },
   {
     id: 29,
@@ -1308,6 +2072,69 @@ export const productData = [
     description:
       "Acetone is a fast-evaporating solvent widely used in cosmetics, pharmaceuticals, and industrial applications. It is commonly found in nail polish removers, paint thinners, and chemical synthesis due to its strong dissolving properties.",
     page: ["Solvents"],
+    chemicalData: {
+      name: "Acetone",
+      formula: "C₃H₆O",
+      molarMass: "58.08 g/mol",
+      casNumber: "67-64-1",
+      appearance: "Colorless liquid",
+      odor: "Characteristic sweet, pungent odor",
+      solubility:
+        "Completely miscible with water, alcohol, and most organic solvents",
+      pH: "Neutral (pH ~7)",
+      concentration:
+        "Available in industrial, pharmaceutical, and laboratory grades",
+      applications: {
+        industrial: [
+          "Used as a solvent in the production of plastics, resins, and synthetic fibers",
+          "Essential in paint thinners, varnishes, and adhesives",
+          "Used in degreasing and cleaning applications",
+        ],
+        pharmaceuticalsAndCosmetics: [
+          "Key ingredient in nail polish remover",
+          "Used in chemical peels and skin-care products",
+          "Used as a solvent in some pharmaceutical formulations",
+        ],
+        laboratory: [
+          "Used in chemical synthesis and extractions",
+          "Acts as a cleaning solvent for laboratory glassware",
+        ],
+        automotiveAndElectronics: [
+          "Used in automotive care for removing grease and stains",
+          "Employed in the electronics industry for cleaning circuit boards",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "56.05°C (132.89°F)" },
+        { property: "Melting Point", value: "-94.7°C (-138.5°F)" },
+        { property: "Density", value: "0.7845 g/cm³ at 25°C" },
+        { property: "Vapor Pressure", value: "30.8 kPa at 25°C" },
+        { property: "Flash Point", value: "-20°C (-4°F) (closed cup)" },
+      ],
+      packaging: [
+        "Available in 160L steel drums",
+        "Supplied in 1L, 5L, and 25L HDPE bottles for laboratory use",
+        "Bulk shipments in ISO tanks and IBC containers",
+      ],
+      storage: [
+        "Store in a cool, dry, and well-ventilated area",
+        "Keep away from heat, sparks, open flames, and strong oxidizers",
+        "Use explosion-proof containers and storage areas",
+      ],
+      safety: {
+        hazards: [
+          "Highly flammable liquid and vapor",
+          "Can cause irritation to eyes, skin, and respiratory system",
+          "Prolonged exposure may cause dizziness, headache, or nausea",
+        ],
+        precautions: [
+          "Use protective gloves and safety goggles when handling",
+          "Ensure proper ventilation in work areas",
+          "Keep away from ignition sources and incompatible materials",
+          "Use proper storage containers to prevent leakage and evaporation",
+        ],
+      },
+    },
   },
   {
     id: 30,
@@ -1315,6 +2142,75 @@ export const productData = [
     description:
       "Ethanol is a versatile alcohol used as a solvent, disinfectant, and fuel additive. It is widely utilized in pharmaceuticals, cosmetics, and alcoholic beverages due to its antimicrobial and preservative properties.",
     page: ["Solvents"],
+    chemicalData: {
+      name: "Ethanol",
+      formula: "C₂H₆O",
+      molarMass: "46.07 g/mol",
+      casNumber: "64-17-5",
+      appearance: "Colorless, volatile liquid",
+      odor: "Mild, characteristic alcoholic odor",
+      solubility: "Completely miscible with water and most organic solvents",
+      pH: "Neutral (~7)",
+      concentration:
+        "Available in various concentrations, including 70%, 95%, and 99.9%",
+      applications: {
+        industrial: [
+          "Used as a solvent in the production of paints, coatings, and inks",
+          "Essential in the manufacture of perfumes, cosmetics, and pharmaceuticals",
+          "Used in the production of biofuels and industrial alcohol",
+        ],
+        pharmaceuticalsAndMedical: [
+          "Used as an antiseptic and disinfectant in hand sanitizers and medical wipes",
+          "Solvent for pharmaceutical formulations",
+          "Preservative in vaccines and medications",
+        ],
+        foodAndBeverage: [
+          "Alcoholic component in beverages such as beer, wine, and spirits",
+          "Used as a food additive and flavoring agent",
+          "Employed in the extraction of natural flavors and essences",
+        ],
+        laboratory: [
+          "Common solvent in chemical synthesis and extractions",
+          "Used in DNA and RNA precipitation procedures",
+          "Cleaning agent for laboratory instruments",
+        ],
+        automotiveAndFuel: [
+          "Blended with gasoline as ethanol fuel (E10, E85, etc.)",
+          "Used in windshield washer fluids and antifreeze",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "78.37°C (173.07°F)" },
+        { property: "Melting Point", value: "-114.1°C (-173.4°F)" },
+        { property: "Density", value: "0.789 g/cm³ at 20°C" },
+        { property: "Vapor Pressure", value: "5.95 kPa at 20°C" },
+        { property: "Flash Point", value: "13°C (55°F) (closed cup)" },
+      ],
+      packaging: [
+        "Available in 1L, 5L, and 25L HDPE bottles",
+        "Supplied in 200L steel drums",
+        "Bulk shipments in ISO tanks and IBC containers",
+      ],
+      storage: [
+        "Store in a cool, well-ventilated area away from heat and ignition sources",
+        "Keep containers tightly closed to prevent evaporation",
+        "Use explosion-proof storage areas and equipment",
+      ],
+      safety: {
+        hazards: [
+          "Highly flammable liquid and vapor",
+          "Can cause eye and skin irritation",
+          "Inhalation of high concentrations may cause dizziness, headache, or nausea",
+          "Harmful if ingested in large amounts",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and adequate ventilation when handling",
+          "Keep away from heat, sparks, open flames, and hot surfaces",
+          "Store in properly labeled, tightly sealed containers",
+          "Use in well-ventilated areas or fume hoods",
+        ],
+      },
+    },
   },
   {
     id: 31,
@@ -1322,6 +2218,68 @@ export const productData = [
     description:
       "Hexane is a highly volatile solvent widely used in oil extraction, adhesives, and industrial cleaning. It is valued for its strong dissolving properties in chemical and manufacturing processes.",
     page: ["Solvents"],
+    chemicalData: {
+      name: "Hexane",
+      formula: "C₆H₁₄",
+      molarMass: "86.18 g/mol",
+      casNumber: "110-54-3",
+      appearance: "Colorless liquid",
+      odor: "Mild gasoline-like odor",
+      solubility: "Insoluble in water, soluble in organic solvents",
+      pH: "Neutral (~7)",
+      concentration:
+        "Available in various purities, including n-Hexane 95% and 99%",
+      applications: {
+        industrial: [
+          "Used as a solvent in the extraction of edible oils from seeds and vegetables",
+          "Essential in the production of adhesives, coatings, and glues",
+          "Used in the manufacture of synthetic rubber and polymers",
+        ],
+        laboratory: [
+          "Used as a non-polar solvent in chemical reactions and extractions",
+          "Commonly employed in chromatography and sample preparation",
+        ],
+        automotiveAndFuel: [
+          "Present in gasoline blends",
+          "Used as a degreasing agent for automotive and mechanical parts",
+        ],
+        pharmaceuticalAndCosmetic: [
+          "Used in pharmaceutical formulations",
+          "Solvent for cosmetics and personal care products",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "68.7°C (155.7°F)" },
+        { property: "Melting Point", value: "-95.3°C (-139.5°F)" },
+        { property: "Density", value: "0.659 g/cm³ at 20°C" },
+        { property: "Vapor Pressure", value: "17.6 kPa at 20°C" },
+        { property: "Flash Point", value: "-22°C (-7.6°F) (closed cup)" },
+      ],
+      packaging: [
+        "Available in 1L, 5L, and 25L HDPE bottles",
+        "Supplied in 200L steel drums",
+        "Bulk shipments in ISO tanks and IBC containers",
+      ],
+      storage: [
+        "Store in a cool, well-ventilated area away from heat and ignition sources",
+        "Keep containers tightly closed to prevent evaporation",
+        "Use explosion-proof storage areas and equipment",
+      ],
+      safety: {
+        hazards: [
+          "Highly flammable liquid and vapor",
+          "May cause drowsiness or dizziness if inhaled",
+          "Prolonged skin exposure may cause irritation or dermatitis",
+          "Toxic to aquatic life with long-lasting effects",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and adequate ventilation when handling",
+          "Keep away from heat, sparks, open flames, and hot surfaces",
+          "Store in properly labeled, tightly sealed containers",
+          "Use in well-ventilated areas or fume hoods",
+        ],
+      },
+    },
   },
   {
     id: 32,
@@ -1329,6 +2287,63 @@ export const productData = [
     description:
       "Acetonitrile is a colorless, volatile solvent widely used in pharmaceuticals, chemical synthesis, and laboratory analysis. It is valued for its high solubility and effectiveness in organic reactions and chromatography.",
     page: ["Solvents"],
+    chemicalData: {
+      name: "Acetonitrile",
+      formula: "C₂H₃N",
+      molarMass: "41.05 g/mol",
+      casNumber: "75-05-8",
+      appearance: "Colorless liquid",
+      odor: "Ether-like odor",
+      solubility: "Miscible with water and most organic solvents",
+      pH: "Neutral (~7)",
+      concentration:
+        "Available in various purities, including 99.9% HPLC grade",
+      applications: {
+        industrial: [
+          "Used as a solvent in the pharmaceutical industry",
+          "Essential in the production of synthetic fibers and plastics",
+          "Employed in battery electrolytes, particularly lithium-ion batteries",
+        ],
+        laboratory: [
+          "Widely used as a solvent in high-performance liquid chromatography (HPLC)",
+          "Common solvent in chemical synthesis and extraction processes",
+        ],
+        pharmaceutical: [
+          "Used in peptide synthesis and DNA sequencing applications",
+          "Solvent in drug formulation and purification processes",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "81.6°C (178.9°F)" },
+        { property: "Melting Point", value: "-45.7°C (-50.3°F)" },
+        { property: "Density", value: "0.786 g/cm³ at 20°C" },
+        { property: "Vapor Pressure", value: "9.7 kPa at 20°C" },
+        { property: "Flash Point", value: "2°C (35.6°F) (closed cup)" },
+      ],
+      packaging: [
+        "Available in 1L, 5L, and 25L glass or HDPE bottles",
+        "Supplied in 200L steel drums",
+        "Bulk shipments in ISO tanks",
+      ],
+      storage: [
+        "Store in a cool, dry, well-ventilated area away from heat and open flames",
+        "Keep containers tightly sealed to prevent moisture absorption",
+        "Use explosion-proof storage and handling equipment",
+      ],
+      safety: {
+        hazards: [
+          "Highly flammable liquid and vapor",
+          "Toxic if swallowed, inhaled, or absorbed through the skin",
+          "Causes irritation to the eyes, skin, and respiratory tract",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and lab coats when handling",
+          "Store away from strong oxidizing agents and acids",
+          "Ensure proper ventilation and avoid prolonged exposure",
+          "Dispose of waste following local environmental regulations",
+        ],
+      },
+    },
   },
   {
     id: 33,
@@ -1336,6 +2351,65 @@ export const productData = [
     description:
       "Ammonium Nitrate is a highly soluble compound used in fertilizers, explosives, and industrial applications. It provides a rich nitrogen source for plant growth and is a key ingredient in mining and construction explosives.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Ammonium Nitrate",
+      formula: "NH₄NO₃",
+      molarMass: "80.04 g/mol",
+      casNumber: "6484-52-2",
+      appearance: "White crystalline solid",
+      odor: "Odorless",
+      solubility: "Highly soluble in water (118g/100mL at 20°C)",
+      pH: "Acidic (4.5-6.0 for a 10% solution)",
+      concentration:
+        "Available in various grades, including technical and agricultural grades",
+      applications: {
+        agriculture: [
+          "Used as a high-nitrogen fertilizer (33-34% nitrogen content)",
+          "Promotes plant growth and improves crop yields",
+        ],
+        industrial: [
+          "Component in the production of explosives (ANFO - Ammonium Nitrate Fuel Oil)",
+          "Used in mining, construction, and quarrying industries",
+        ],
+        laboratory: [
+          "Used as an oxidizer in various chemical reactions",
+          "Component in cold packs due to its endothermic dissolution in water",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "Decomposes at ~210°C (410°F)" },
+        { property: "Melting Point", value: "169.6°C (337.3°F)" },
+        { property: "Density", value: "1.72 g/cm³" },
+        { property: "Vapor Pressure", value: "Negligible at room temperature" },
+        {
+          property: "Decomposition Temperature",
+          value: "210°C (can lead to explosion under confinement)",
+        },
+      ],
+      packaging: [
+        "Packed in 25kg, 50kg HDPE bags with inner lining",
+        "Available in bulk bags (500kg - 1000kg) for industrial use",
+        "Transported in sealed containers to prevent moisture absorption",
+      ],
+      storage: [
+        "Store in a cool, dry, well-ventilated area away from combustible materials",
+        "Keep away from sources of heat, sparks, and open flames",
+        "Avoid contamination with organic materials, fuels, and reducing agents",
+      ],
+      safety: {
+        hazards: [
+          "Strong oxidizer; enhances combustion of other materials",
+          "Can be explosive under high heat or confined conditions",
+          "Harmful if ingested or inhaled in large quantities",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and dust masks when handling",
+          "Store separately from flammable substances and reducing agents",
+          "Ensure proper ventilation in storage areas",
+          "Follow local regulations for transport and disposal",
+        ],
+      },
+    },
   },
   {
     id: 34,
@@ -1343,6 +2417,68 @@ export const productData = [
     description:
       "Zinc Sulfate is a water-soluble compound used in pharmaceuticals, agriculture, and industrial applications. It serves as a dietary supplement, fertilizer additive, and a key ingredient in various chemical processes.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Zinc Sulfate",
+      formula: "ZnSO₄",
+      molarMass: "161.47 g/mol (anhydrous), 287.53 g/mol (heptahydrate)",
+      casNumber: "7733-02-0",
+      appearance: "White crystalline powder or colorless crystals",
+      odor: "Odorless",
+      solubility: "Highly soluble in water (57.7 g/100 mL at 20°C)",
+      pH: "4.0-6.0 (5% solution)",
+      concentration:
+        "Available in different hydrate forms: monohydrate, heptahydrate, anhydrous",
+      applications: {
+        agriculture: [
+          "Used as a micronutrient fertilizer to correct zinc deficiency in crops",
+          "Essential for plant growth and enzyme function",
+        ],
+        industrial: [
+          "Used in the production of rayon, electrolytes for zinc plating",
+          "Employed in the manufacture of pigments and dyes",
+        ],
+        pharmaceutical: [
+          "Used in dietary supplements to treat zinc deficiency",
+          "Component in skin treatments for acne and wound healing",
+        ],
+        waterTreatment: [
+          "Used as a coagulating agent in water purification",
+          "Employed in the prevention of moss and algae in water systems",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        { property: "Melting Point", value: "680°C (anhydrous)" },
+        {
+          property: "Density",
+          value: "3.54 g/cm³ (anhydrous), 1.97 g/cm³ (heptahydrate)",
+        },
+        { property: "Solubility in Alcohol", value: "Slightly soluble" },
+        { property: "Hygroscopic", value: "Absorbs moisture from air" },
+      ],
+      packaging: [
+        "Available in 25kg, 50kg HDPE bags with inner lining",
+        "Bulk packaging available for industrial applications",
+        "Sealed moisture-proof bags to prevent caking",
+      ],
+      storage: [
+        "Store in a cool, dry, well-ventilated area away from direct sunlight",
+        "Keep away from strong acids and alkalis",
+        "Avoid prolonged exposure to moisture to prevent clumping",
+      ],
+      safety: {
+        hazards: [
+          "Irritant to skin, eyes, and respiratory system",
+          "Harmful if swallowed in large quantities",
+          "Toxic to aquatic life in high concentrations",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and masks when handling",
+          "Avoid inhalation of dust; use in well-ventilated areas",
+          "Follow proper disposal methods according to local regulations",
+        ],
+      },
+    },
   },
   {
     id: 35,
@@ -1350,6 +2486,71 @@ export const productData = [
     description:
       "Copper Sulfate is a versatile compound used in agriculture, water treatment, and industrial applications. It acts as a fungicide, algaecide, and catalyst in various chemical processes.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Copper Sulfate",
+      formula: "CuSO₄",
+      molarMass: "159.61 g/mol (anhydrous), 249.68 g/mol (pentahydrate)",
+      casNumber: "7758-98-7",
+      appearance:
+        "Blue crystalline solid (pentahydrate), white-gray powder (anhydrous)",
+      odor: "Odorless",
+      solubility: "Highly soluble in water (23 g/100 mL at 20°C)",
+      pH: "3.5-4.5 (5% solution)",
+      concentration: "Available in anhydrous and pentahydrate forms",
+      applications: {
+        agriculture: [
+          "Used as a fungicide, algaecide, and herbicide in agriculture",
+          "Essential micronutrient in animal feed and fertilizers",
+        ],
+        industrial: [
+          "Used in electroplating and metal surface treatment",
+          "Component in textile dyeing and printing processes",
+        ],
+        waterTreatment: [
+          "Used to control algae and bacteria in water reservoirs and pools",
+          "Added to wastewater treatment systems for purification",
+        ],
+        medical: [
+          "Used in medical applications as an antiseptic and astringent",
+          "Employed in the preparation of diagnostic reagents",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        {
+          property: "Melting Point",
+          value: "110°C (pentahydrate), 560°C (anhydrous)",
+        },
+        {
+          property: "Density",
+          value: "3.6 g/cm³ (anhydrous), 2.28 g/cm³ (pentahydrate)",
+        },
+        { property: "Solubility in Alcohol", value: "Slightly soluble" },
+        { property: "Hygroscopic", value: "Absorbs moisture from air" },
+      ],
+      packaging: [
+        "Available in 25kg, 50kg HDPE bags with inner lining",
+        "Packed in moisture-proof bags to prevent caking",
+        "Bulk packaging available for industrial applications",
+      ],
+      storage: [
+        "Store in a cool, dry, and well-ventilated area",
+        "Keep away from direct sunlight and moisture",
+        "Avoid contact with acids and strong oxidizers",
+      ],
+      safety: {
+        hazards: [
+          "Harmful if swallowed; can cause gastrointestinal distress",
+          "Irritant to skin, eyes, and respiratory system",
+          "Toxic to aquatic life in high concentrations",
+        ],
+        precautions: [
+          "Use protective gloves, goggles, and masks when handling",
+          "Avoid inhalation of dust; use in well-ventilated areas",
+          "Follow proper disposal regulations to prevent environmental contamination",
+        ],
+      },
+    },
   },
   {
     id: 36,
@@ -1357,13 +2558,137 @@ export const productData = [
     description:
       "Gibberellic Acid is a plant growth regulator used in agriculture to enhance seed germination, stem elongation, and fruit development. It helps improve crop yield and quality in various horticultural and agricultural applications.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Gibberellic Acid",
+      formula: "C19H22O6",
+      molarMass: "346.37 g/mol",
+      casNumber: "77-06-5",
+      appearance: "White to off-white crystalline powder",
+      odor: "Odorless",
+      solubility: "Slightly soluble in water, soluble in ethanol and acetone",
+      pH: "3.8 - 4.5 (1% solution)",
+      concentration:
+        "Available in various concentrations, commonly 90% technical grade and 0.001% - 10% formulated products",
+      applications: {
+        agriculture: [
+          "Used as a plant growth regulator to stimulate seed germination and growth",
+          "Promotes fruit setting, flowering, and cell elongation in plants",
+          "Enhances yield in crops like rice, wheat, grapes, and citrus fruits",
+        ],
+        horticulture: [
+          "Speeds up seed germination and seedling development",
+          "Used in tissue culture for plant propagation",
+        ],
+        industrial: [
+          "Employed in the brewing industry to stimulate malting in barley",
+          "Used in research and biotechnology for studying plant hormones",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        { property: "Melting Point", value: "233-235°C" },
+        { property: "Density", value: "1.2 g/cm³" },
+        {
+          property: "Stability",
+          value:
+            "Stable under normal conditions but decomposes in strong acidic or alkaline environments",
+        },
+      ],
+      packaging: [
+        "Available in 1g, 5g, 25g, 100g, 1kg, and bulk packaging",
+        "Stored in sealed aluminum foil bags, HDPE containers, or fiber drums",
+      ],
+      storage: [
+        "Store in a cool, dry place away from direct sunlight",
+        "Keep in tightly closed containers to prevent moisture absorption",
+        "Avoid exposure to strong acids and oxidizing agents",
+      ],
+      safety: {
+        hazards: [
+          "Low toxicity but can cause mild irritation to skin and eyes",
+          "May cause respiratory irritation if inhaled in large amounts",
+        ],
+        precautions: [
+          "Wear protective gloves, goggles, and a dust mask when handling",
+          "Use in a well-ventilated area to prevent inhalation",
+          "Follow proper disposal guidelines to avoid environmental contamination",
+        ],
+      },
+    },
   },
   {
     id: 37,
-    heading: "Amino Acid 50 & 80%",
+    heading: "Amino Acid",
     description:
       "Amino Acid is plant growth enhancers used in agriculture to improve nutrient absorption, stress resistance, and crop yield. They promote healthy plant development and are widely used in fertilizers and biostimulants.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Amino Acid",
+      formula: "Varies (General structure: NH2-CHR-COOH)",
+      molarMass: "Varies depending on the specific amino acid",
+      casNumber: "Varies for different amino acids",
+      appearance: "White to off-white crystalline powder or granules",
+      odor: "Odorless or slightly characteristic odor",
+      solubility: "Soluble in water, varies in organic solvents",
+      pH: "Varies (commonly 4 - 7 for neutral amino acids)",
+      concentration:
+        "Available in various concentrations depending on the application",
+      applications: {
+        agriculture: [
+          "Used as a bio-stimulant to enhance plant growth and crop yield",
+          "Improves soil fertility and nutrient uptake",
+          "Acts as a chelating agent in fertilizers",
+        ],
+        foodIndustry: [
+          "Used as a food additive and nutritional supplement",
+          "Essential in protein synthesis and metabolism",
+        ],
+        pharmaceuticals: [
+          "Used in dietary supplements and medical nutrition products",
+          "Supports muscle recovery, wound healing, and immune system function",
+        ],
+        cosmetics: [
+          "Used in skin and hair care products for hydration and protein repair",
+          "Acts as an anti-aging and moisturizing agent",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        {
+          property: "Melting Point",
+          value: "Varies (typically 200-300°C with decomposition)",
+        },
+        {
+          property: "Density",
+          value: "Varies based on the specific amino acid",
+        },
+        {
+          property: "Stability",
+          value:
+            "Stable under normal conditions, but sensitive to strong acids and bases",
+        },
+      ],
+      packaging: [
+        "Available in 25kg bags, 50kg drums, or bulk packaging",
+        "Stored in airtight containers to prevent moisture absorption",
+      ],
+      storage: [
+        "Store in a cool, dry place away from direct sunlight",
+        "Keep in sealed containers to prevent contamination",
+        "Avoid exposure to strong acids, bases, and oxidizing agents",
+      ],
+      safety: {
+        hazards: [
+          "Generally considered safe, but may cause irritation in high concentrations",
+          "Some amino acids may be allergens to sensitive individuals",
+        ],
+        precautions: [
+          "Use protective gloves and a mask when handling large quantities",
+          "Ensure proper ventilation in handling areas",
+          "Follow local disposal regulations for waste management",
+        ],
+      },
+    },
   },
   {
     id: 38,
@@ -1371,6 +2696,74 @@ export const productData = [
     description:
       "Borax Decahydrate is a versatile compound used in detergents, glass manufacturing, and agriculture. It acts as a buffering agent, water softener, and essential micronutrient for plant growth.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Borax Decahydrate",
+      formula: "Na₂B₄O₇·10H₂O",
+      molarMass: "381.37 g/mol",
+      casNumber: "1303-96-4",
+      appearance: "White crystalline powder or granules",
+      odor: "Odorless",
+      solubility:
+        "Soluble in water (4.7 g/100 mL at 20°C); insoluble in alcohol",
+      pH: "9.3 - 9.5 (1% solution in water at 25°C)",
+      concentration:
+        "Available in various concentrations depending on application",
+      applications: {
+        industrial: [
+          "Used in glass and ceramic manufacturing",
+          "Acts as a flux in metallurgy",
+          "Used in welding and brazing applications",
+        ],
+        agriculture: [
+          "Used as a micronutrient in fertilizers",
+          "Enhances plant growth by providing boron",
+        ],
+        detergents: [
+          "Used in laundry detergents and household cleaners",
+          "Improves stain removal and softens water",
+        ],
+        pharmaceuticals: [
+          "Used in some medicinal and cosmetic formulations",
+          "Acts as a pH buffer in eye drops and skin creams",
+        ],
+        flameRetardants: [
+          "Used in fire retardant coatings and insulation materials",
+        ],
+      },
+      properties: [
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        {
+          property: "Melting Point",
+          value: "62°C (loses water, forms anhydrous borax at 320°C)",
+        },
+        { property: "Density", value: "1.73 g/cm³" },
+        {
+          property: "Stability",
+          value: "Stable under normal conditions but loses water upon heating",
+        },
+      ],
+      packaging: [
+        "Available in 25kg and 50kg bags",
+        "Packed in moisture-resistant containers",
+      ],
+      storage: [
+        "Store in a cool, dry place away from moisture",
+        "Keep in tightly sealed containers to prevent water absorption",
+        "Avoid exposure to strong acids and bases",
+      ],
+      safety: {
+        hazards: [
+          "May cause eye and skin irritation",
+          "Harmful if ingested in large quantities",
+          "Prolonged exposure may affect fertility and development",
+        ],
+        precautions: [
+          "Use protective gloves, safety goggles, and a dust mask when handling",
+          "Ensure proper ventilation in storage and handling areas",
+          "Follow local disposal regulations for waste management",
+        ],
+      },
+    },
   },
   {
     id: 39,
@@ -1378,6 +2771,66 @@ export const productData = [
     description:
       "Citric Acid Anhydrous is a widely used acidulant and preservative in food, beverages, and pharmaceuticals. It also serves as a pH regulator and chelating agent in industrial and cosmetic applications.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Citric Acid Anhydrous",
+      formula: "C₆H₈O₇",
+      molarMass: "192.12 g/mol",
+      casNumber: "77-92-9",
+      appearance: "White crystalline powder or granules",
+      odor: "Odorless",
+      solubility:
+        "Highly soluble in water (61.8 g/100 mL at 20°C); soluble in ethanol",
+      pH: "2.2 (1% aqueous solution at 25°C)",
+      concentration:
+        "Available in various concentrations depending on application",
+      applications: {
+        foodAndBeverage: [
+          "Used as a flavoring agent and preservative in soft drinks and candies",
+          "Acts as an acidulant in food processing",
+        ],
+        pharmaceuticals: [
+          "Used as an excipient in tablets and effervescent powders",
+          "Serves as a pH regulator in medicinal formulations",
+        ],
+        cosmetics: [
+          "Used in skincare products as an exfoliating agent",
+          "Acts as a pH adjuster in shampoos and creams",
+        ],
+        industrial: [
+          "Used in cleaning products for descaling and rust removal",
+          "Acts as a chelating agent in detergents and water treatment",
+        ],
+      },
+      properties: [
+        { property: "Melting Point", value: "153°C (decomposes)" },
+        { property: "Density", value: "1.665 g/cm³" },
+        { property: "Boiling Point", value: "Decomposes before boiling" },
+        {
+          property: "Stability",
+          value: "Stable under normal conditions; hygroscopic",
+        },
+      ],
+      packaging: [
+        "Available in 25kg and 50kg bags",
+        "Packed in moisture-resistant bags or drums",
+      ],
+      storage: [
+        "Store in a cool, dry, and well-ventilated area",
+        "Keep in tightly sealed containers to prevent moisture absorption",
+        "Avoid exposure to strong oxidizers and bases",
+      ],
+      safety: {
+        hazards: [
+          "May cause mild skin and eye irritation",
+          "Can be harmful if inhaled in large amounts",
+        ],
+        precautions: [
+          "Use protective gloves and safety goggles when handling",
+          "Ensure proper ventilation in storage and handling areas",
+          "Wash hands thoroughly after handling",
+        ],
+      },
+    },
   },
   {
     id: 40,
@@ -1385,5 +2838,72 @@ export const productData = [
     description:
       "Boron 20% is a micronutrient used in agriculture to support plant growth, cell division, and fruit development. It helps improve crop yield and quality by preventing boron deficiencies in soil.",
     page: ["Agro Chemical"],
+    chemicalData: {
+      name: "Boron",
+      formula: "B",
+      molarMass: "10.81 g/mol",
+      casNumber: "7440-42-8",
+      appearance:
+        "Black-brown amorphous powder or silver-grey crystalline solid",
+      odor: "Odorless",
+      solubility: "Insoluble in water; soluble in molten metals and some acids",
+      pH: "Not applicable (elemental form)",
+      concentration:
+        "Available in various purities and particle sizes depending on application",
+      applications: {
+        industrial: [
+          "Used in metallurgy as an additive to improve the hardness of steel",
+          "Essential in the production of high-strength glass and ceramics",
+        ],
+        agriculture: [
+          "Used as a micronutrient fertilizer to promote plant growth",
+          "Essential for cell wall development in plants",
+        ],
+        electronics: [
+          "Utilized in semiconductor manufacturing",
+          "Acts as a dopant in silicon wafers for electronic components",
+        ],
+        pharmaceuticals: [
+          "Used in some medicinal formulations",
+          "Has potential applications in cancer treatment and antiseptics",
+        ],
+      },
+      properties: [
+        { property: "Melting Point", value: "2076°C" },
+        { property: "Boiling Point", value: "3927°C" },
+        {
+          property: "Density",
+          value: "2.34 g/cm³ (crystalline), 2.08 g/cm³ (amorphous)",
+        },
+        {
+          property: "Electrical Conductivity",
+          value: "Poor conductor at room temperature",
+        },
+        {
+          property: "Hardness",
+          value: "9.5 on the Mohs scale (crystalline form)",
+        },
+      ],
+      packaging: [
+        "Available in powder, granular, or crystalline form",
+        "Packed in sealed drums or plastic-lined bags (5kg, 25kg, or bulk quantities)",
+      ],
+      storage: [
+        "Store in a cool, dry place away from moisture",
+        "Keep away from strong oxidizing agents",
+        "Ensure proper ventilation in storage areas",
+      ],
+      safety: {
+        hazards: [
+          "Dust may cause mild respiratory irritation if inhaled",
+          "Prolonged exposure may lead to boron toxicity",
+        ],
+        precautions: [
+          "Use protective masks and gloves when handling",
+          "Ensure proper ventilation when using in powder form",
+          "Avoid prolonged skin and eye contact",
+        ],
+      },
+    },
   },
 ];

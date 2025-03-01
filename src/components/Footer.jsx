@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-3">
-              <Logo className="mb-3" />
+              <Logo className="mb-3" isHeader={false} />
               <p className="mb-3">ISO 9001:2015 Certified Company</p>
               <div className="d-flex">
                 <div

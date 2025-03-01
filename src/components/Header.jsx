@@ -54,7 +54,7 @@ function Header() {
         <Toolbar disableGutters>
           <div className="d-flex justify-content-between align-items-center w-100">
             {/* Logo */}
-            <Logo />
+            <Logo isHeader={true} />
 
             {/* Mobile Menu */}
             <Box
