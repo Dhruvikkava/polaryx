@@ -21,4 +21,34 @@ export const routerList = [
     name: "Products",
     element: lazy(() => import("../pages/Cosmetic")),
   },
+  {
+    path: "/products/food-beverages",
+    name: "Products",
+    element: lazy(() => import("../pages/FoodBeverage")),
+  },
+  {
+    path: "/products/purifier-agent",
+    name: "Products",
+    element: lazy(() => import("../pages/PurifierAgent")),
+  },
+  {
+    path: "/products/solvents",
+    name: "Products",
+    element: lazy(() => import("../pages/Solvent")),
+  },
+  {
+    path: "/products/agro-chemical",
+    name: "Products",
+    element: lazy(() => import("../pages/AgroChemical")),
+  },
+  {
+    path: "/products/contact-us",
+    name: "Contact",
+    element: lazy(() => import("../pages/ContactUs")),
+  },
+  {
+    path: "/products/details",
+    name: "Product",
+    element: lazy(() => import("../pages/ProductDetail")),
+  },
 ];

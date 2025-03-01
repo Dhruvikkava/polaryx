@@ -7,7 +7,7 @@ import Cloud2Img from "../images/cloud2.png";
 
 const Custombanner = ({ name, heading }) => {
   return (
-    <div className="custom-banner d-flex justify-content-center flex-column position-relative">
+    <div className="custom-banner d-flex justify-content-center flex-column position-relative overflow-hidden">
       <div className="container">
         <h1 className="mb-2">{heading}</h1>
         <Breadcrumb name={name} />

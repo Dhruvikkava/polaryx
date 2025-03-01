@@ -17,6 +17,7 @@ const pages = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about-us" },
   { name: "Products", path: "/products" },
+  { name: "Contact Us", path: "/contact-us" },
 ];
 
 const productSubMenu = [

@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({ heading, descriptions = [] }) => {
+const ProductCard = ({ heading, descriptions = [], id }) => {
+  const navigate = useNavigate();
   return (
     <div className="col-md-4 mb-5 product-card-container position-relative d-flex">
       <div className="product-card d-flex justify-content-between flex-column">
@@ -14,7 +16,10 @@ const ProductCard = ({ heading, descriptions = [] }) => {
             );
           })}
         </div>
-        <button className="hero-button ms-auto d-table">
+        <button
+          className="hero-button ms-auto d-table"
+          onClick={() => navigate("/products/details?id=" + id)}
+        >
           <span>View Details</span>
         </button>
       </div>

@@ -21,6 +21,7 @@ const Cosmetic = () => {
                   key={product.heading}
                   heading={product.heading}
                   descriptions={[product.description]}
+                  id={product.id}
                 />
               )
           )}

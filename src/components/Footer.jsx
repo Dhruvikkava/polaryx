@@ -35,7 +35,14 @@ const Footer = () => {
               <Logo className="mb-3" />
               <p className="mb-3">ISO 9001:2015 Certified Company</p>
               <div className="d-flex">
-                <div className="social-icon-wrap cursor-pointer">
+                <div
+                  className="social-icon-wrap cursor-pointer"
+                  onClick={() =>
+                    handleClickUrl(
+                      "https://www.linkedin.com/company/polaryx-international/"
+                    )
+                  }
+                >
                   <img src={LinkedIn} alt="linkedin" className="social-icon" />
                 </div>
                 <div
@@ -48,7 +55,12 @@ const Footer = () => {
                 >
                   <img src={Facebook} alt="facebook" className="social-icon" />
                 </div>
-                <div className="social-icon-wrap cursor-pointer">
+                <div
+                  className="social-icon-wrap cursor-pointer"
+                  onClick={() =>
+                    handleClickUrl("https://www.instagram.com/polaryx_int/")
+                  }
+                >
                   <img
                     src={Twitter}
                     alt="twitter"
@@ -57,7 +69,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <h5 className="mb-3 font-weight-600">Get In Touch</h5>
               <div className="d-flex align-items-center mb-3">
                 <RoomIcon className="color-mat-black" />
@@ -65,11 +77,11 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-start mb-3">
                 <PhoneIcon className="color-mat-black" />
-                <div className="d-flex flex-column ms-2">
+                <div className="d-flex flex-wrap ms-2">
                   <a href="tel:+918013031369" className="footer-link ">
                     +91 8013031369
                   </a>
-                  <a href="tel:+919016106665" className="footer-link ">
+                  <a href="tel:+919016106665" className="footer-link ps-3 ">
                     +91 9016106665
                   </a>
                   <a href="tel:+919106295758" className="footer-link">
@@ -80,10 +92,10 @@ const Footer = () => {
               <div className="d-flex align-items-center mb-3">
                 <EmailIcon className="color-mat-black" />
                 <a
-                  href="mailto:polaryxint@gmail.com"
+                  href="mailto:polaryx.international2024@gmail.com"
                   className="footer-link ms-2 mb-1"
                 >
-                  polaryxint@gmail.com
+                  polaryx.international2024@gmail.com
                 </a>
               </div>
               <div className="d-flex align-items-center mb-3">
@@ -91,7 +103,7 @@ const Footer = () => {
                 <p className="ms-2">www.polaryxinternational.com</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-2">
               <h5 className="mb-3 font-weight-600">Quick Links</h5>
               <div className="d-flex align-items-center mb-3">
                 <DoubleArrowIcon className="color-mat-black" />
