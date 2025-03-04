@@ -77,7 +77,7 @@ const ContactUs = () => {
               <Typography variant="h5" gutterBottom fontWeight="bold">
                 Get In Touch
               </Typography>
-              <Typography variant="body2" sx={{ mb: 1 }}>
+              <Typography variant="body2">
                 Reach out for inquiries, quotes, or collaborations!
               </Typography>
               <form onSubmit={handleSubmit}>

@@ -56,4 +56,9 @@ export const routerList = [
     name: "Product",
     element: lazy(() => import("../pages/ProductDetail")),
   },
+  {
+    path: "/privacy-policy",
+    name: "Privacy Policy",
+    element: lazy(() => import("../pages/PrivacyPolicy")),
+  },
 ];

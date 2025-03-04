@@ -1,3 +1,5 @@
+export const email = "polaryx.international2024@gmail.com";
+
 export const productData = [
   {
     id: 1,

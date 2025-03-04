@@ -240,3 +240,11 @@ header {
 .Mui-error {
   margin-left: 8px;
 }
+
+.not-found-page .right-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+}

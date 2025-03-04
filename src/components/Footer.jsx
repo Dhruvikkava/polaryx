@@ -9,6 +9,7 @@ import LinkedIn from "../images/linkedin.png";
 import Facebook from "../images/facebook.png";
 import Twitter from "../images/twitter.png";
 import Logo from "./Logo";
+import { email } from "../constants";
 
 const Footer = () => {
   const location = useLocation();
@@ -91,11 +92,8 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-center mb-3">
                 <EmailIcon className="color-mat-black" />
-                <a
-                  href="mailto:polaryx.international2024@gmail.com"
-                  className="footer-link ms-2 mb-1"
-                >
-                  polaryx.international2024@gmail.com
+                <a href={`mailto:${email}`} className="footer-link ms-2 mb-1">
+                  {email}
                 </a>
               </div>
               <div className="d-flex align-items-center mb-3">
