@@ -6,10 +6,12 @@ import VisionImg from "../images/vision.png";
 import Heading from "../components/Heading";
 import UserImg from "../images/user.png";
 import Progressbar from "../components/Progressbar";
+import ScrollToTop from "../components/ScrollToTop";
 
 const AboutUs = () => {
   return (
     <div className="page-wrapper">
+      <ScrollToTop />
       <Progressbar />
       <Custombanner name="About Us" heading="About Us" />
 

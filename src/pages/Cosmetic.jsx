@@ -3,10 +3,12 @@ import Progressbar from "../components/Progressbar";
 import Custombanner from "../components/Custombanner";
 import ProductCard from "../components/ProductCard";
 import { productData } from "../constants";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Cosmetic = () => {
   return (
     <div className="page-wrapper">
+      <ScrollToTop />
       <Progressbar />
       <Custombanner name="Cosmetics and Personal Care" heading={"Products"} />
       <div className="container">

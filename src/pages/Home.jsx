@@ -14,10 +14,12 @@ import CountriesImg from "../images/layer3.png";
 import CustomSlider from "../components/CustomSlider";
 import ProductTab from "../components/ProductTab";
 import Progressbar from "../components/Progressbar";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
     <div className="page-wrapper">
+      <ScrollToTop />
       <Progressbar />
       <div className="hero-section">
         <div className="hero-overlay" />

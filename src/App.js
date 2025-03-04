@@ -1,11 +1,13 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { CircularProgress } from "@mui/material"; // Import loader
+import { CircularProgress } from "@mui/material";
+import { ToastContainer } from "react-toastify";
 import { routerList } from "./routes";
 import Header from "./components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "react-toastify/dist/ReactToastify.css";
 import "./css/main.css";
 import Footer from "./components/Footer";
 
@@ -23,6 +25,7 @@ function App() {
             </div>
           }
         >
+          <ToastContainer />
           <Header />
           <Routes>
             {routerList.map((item, index) => (

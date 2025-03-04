@@ -20,6 +20,7 @@ import { useSearchParams } from "react-router-dom";
 import Progressbar from "../components/Progressbar";
 import Custombanner from "../components/Custombanner";
 import { productData } from "../constants";
+import ScrollToTop from "../components/ScrollToTop";
 
 const ProductDetail = () => {
   const [searchParams] = useSearchParams();
@@ -31,6 +32,7 @@ const ProductDetail = () => {
 
   return (
     <div className="page-wrapper">
+      <ScrollToTop />
       <Progressbar />
       <Custombanner name={filteredProduct?.heading} heading={"Products"} />
       <Container sx={{ py: 5 }}>

@@ -8,8 +8,13 @@ export const routerList = [
   },
   {
     path: "/about-us",
-    name: "About",
+    name: "About Us",
     element: lazy(() => import("../pages/AboutUs")),
+  },
+  {
+    path: "/contact-us",
+    name: "Contact Us",
+    element: lazy(() => import("../pages/ContactUs")),
   },
   {
     path: "/products/water-treatment",
