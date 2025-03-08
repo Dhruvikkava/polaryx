@@ -132,3 +132,80 @@
 .css-1mf9qzl-MuiButtonBase-root-MuiTabScrollButton-root.Mui-disabled {
   display: none;
 }
+
+@media only screen and (max-width: 1023px) {
+  .home-product .product-custom-image .cloud2-img,
+  .home-product .product-custom-image .plant-img {
+    display: none;
+  }
+  .slider-container {
+    width: 80% !important;
+  }
+  .people-say-left {
+    height: 400px;
+    width: 150px;
+  }
+  .hero-content-description {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-overlay.overlay-light {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-product .product-custom-image .cloud1-img {
+    display: none;
+  }
+  .hero-content br {
+    display: none;
+  }
+  .about-us-image {
+    max-width: 460px;
+    max-height: 320px;
+  }
+  .about-us-image img {
+    height: 100% !important;
+  }
+  .why-choose-us-image {
+    max-width: 460px;
+  }
+  .slider-container {
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .css-1u9o2lj-MuiToolbar-root {
+    min-height: 58px;
+  }
+  .page-wrapper {
+    margin-top: 54px;
+  }
+  .hero-content-description {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .about-us-image {
+    max-width: 380px;
+    max-height: 270px;
+  }
+  header .MuiIconButton-root {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about-us-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .hero-section {
+    height: 100%;
+    padding: 30px 0;
+  }
+}

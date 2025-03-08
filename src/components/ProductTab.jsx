@@ -89,12 +89,15 @@ export default function ProductTab() {
 
   return (
     <Box
-      className="ps-3 pe-5"
+      className="ps-lg-0 ps-xl-3 pe-0"
       sx={{
-        maxWidth: { xs: 320, sm: 480, md: 767, lg: "100%" },
+        maxWidth: { xs: 992, sm: 992, lg: "100%" },
       }}
     >
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+      <Box
+        className="position-relative"
+        sx={{ borderBottom: 1, borderColor: "divider", zIndex: 999 }}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
@@ -111,7 +114,7 @@ export default function ProductTab() {
       </Box>
       <CustomTabPanel value={value} index={0}>
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-7 position-relative z-2">
             <ChemicalContent name="Hydrochloric Acid (HCl)" />
             <ChemicalContent name="Aluminum Sulfate (Alum)" />
             <ChemicalContent name="Ferric Chloride" />
@@ -128,7 +131,7 @@ export default function ProductTab() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-7 position-relative z-2">
             <ChemicalContent name="Hydrogen Peroxide (H₂O₂)" />
             <ChemicalContent name="Potassium Permanganate (KMnO₄)" />
             <ChemicalContent name="Poly Alumenum Chloride" />
@@ -145,7 +148,7 @@ export default function ProductTab() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-7 position-relative z-2">
             <ChemicalContent name="Lactic Acid" />
             <ChemicalContent name="Titanium Dioxide (TiO₂)" />
             <ChemicalContent name="Acetic Acid glacial" />
@@ -162,7 +165,7 @@ export default function ProductTab() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-7 position-relative z-2">
             <ChemicalContent name="Citric Acid" />
             <ChemicalContent name="Acrylic acid" />
             <ChemicalContent name="Dextrose Anhydrous" />
@@ -179,7 +182,7 @@ export default function ProductTab() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-7 position-relative z-2">
             <ChemicalContent name="Acrylic acid" />
             <ChemicalContent name="Diethylene Glycol (DEG)" />
             <ChemicalContent name="Formic Acid" />

@@ -54,14 +54,28 @@ const CustomSlider = () => {
     prevArrow: <PrevArrow />,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="slider-container home-slider position-relative ps-5 py-3">
-      <h2 className="heading ps-3 py-3">What Our Peoples Say</h2>
+    <div className="slider-container home-slider position-relative ps-lg-2 ps-xl-5 py-3">
+      <h2 className="heading ps-3 py-3">What Our People Say</h2>
       <p className="ps-3 mb-4">
         Hear from our satisfied clients and partners about their experience with
-        Polaryx
+        Polaryx.
       </p>
       <Slider {...settings}>
         {images.map((item, index) => (
@@ -73,16 +87,14 @@ const CustomSlider = () => {
               <CardActionArea>
                 <CardContent>
                   <div className="d-flex align-items-center slider-head mb-3">
-                    <img src={item.img} alt="people" loading="lazy" />
+                    <img
+                      src={item.img}
+                      alt="people"
+                      loading="lazy"
+                      style={{ width: 50, height: 50, borderRadius: "50%" }}
+                    />
                     <div className="ms-3">
-                      <Typography
-                        className="mb-0"
-                        gutterBottom
-                        variant="h6"
-                        component="div"
-                      >
-                        {item.name}
-                      </Typography>
+                      <h5 className="mb-2">{item.name}</h5>
                       <Rating
                         name="hover-feedback"
                         value={index === 2 ? 4 : 5}

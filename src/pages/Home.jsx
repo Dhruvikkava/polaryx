@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Heading from "../components/Heading";
 import ChemicalImg from "../images/chemical1.jpg";
@@ -17,6 +18,7 @@ import Progressbar from "../components/Progressbar";
 import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="page-wrapper">
       <ScrollToTop />
@@ -24,7 +26,7 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-overlay" />
         <div className="hero-content d-flex justify-content-center align-items-center h-100">
-          <div className="py-3">
+          <div className="py-3 px-3">
             <h1 className="color-white mb-4">
               Reliable Global Sourcing & Export Solutions <br /> with Quality
               and Trust
@@ -33,7 +35,10 @@ const Home = () => {
               We offer reliable global sourcing and export solutions, ensuring
               quality <br /> trust, and seamless trade for businesses worldwide
             </p>
-            <button className="hero-button d-flex justify-content-center align-items-center mx-auto">
+            <button
+              className="hero-button d-flex justify-content-center align-items-center mx-auto"
+              onClick={() => navigate("/about-us")}
+            >
               <span>Explore More</span>{" "}
               <ChevronRightIcon
                 className="ms-1"
@@ -44,9 +49,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="about-us container mt-6">
-        <div className="row">
-          <div className="col-md-6 pe-4 d-flex justify-content-center">
+      <div className="about-us container mt-3 mt-sm-5 mt-md-6">
+        <div className="row about-flex">
+          <div className="col-md-6 pe-4 d-flex justify-content-center pb-3 pb-sm-0">
             <div className="row about-us-image overflow-hidden w-100">
               <div className="col-6 p-0 position-relative">
                 <div className="hero-overlay overlay-light"></div>
@@ -60,7 +65,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 ps-4 d-flex flex-column justify-content-center">
+          <div className="col-md-6 ps-4 d-flex flex-column justify-content-center pb-3">
             <h4 className="color-primary font-weight-600 mb-3">Who We Are </h4>
             <p className="mb-2 text-justify">
               <strong>Polaryx</strong> is your trusted global sourcing and
@@ -85,14 +90,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-6 container">
+      <div className="mt-sm-5 mt-md-6 container">
         <div className="row">
-          <div className="col-md-6 pe-4 d-flex flex-column justify-content-center">
+          <div className="col-md-6 pe-4 d-flex flex-column justify-content-center pb-3 pb-sm-3 align-items-center align-items-md-start">
             <h4 className="color-primary font-weight-600 mb-3">
               Why Choose Us{" "}
             </h4>
             <h3 className="mb-2">Choose Polaryx for Quality and Reliability</h3>
-            <p className="mb-3 text-justify">
+            <p className="mb-3 text-justify text-center text-sm-center text-md-start">
               Polaryx is built on the pillars of trust and uncompromising
               quality. Our expertise and commitment to seamless global trade
               make us the perfect choice for your business growth.
@@ -117,7 +122,7 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <div className="why-choose-us-image overflow-hidden ms-3">
+            <div className="why-choose-us-image overflow-hidden ms-0 ms-md-3">
               <img className="h-100" src={ChemicalDrumImg} alt="Chemical" />
             </div>
           </div>
@@ -149,7 +154,7 @@ const Home = () => {
             { img: CountriesImg, count: "70+", label: "Countries" },
           ].map((item) => {
             return (
-              <div className="col-md-3 d-flex align-items-center flex-column">
+              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center flex-column">
                 <div className="achievement-border-layer mb-3">
                   <div className="achievement-image-wrap h-100 d-flex justify-content-center align-items-center">
                     <img
@@ -174,7 +179,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="people-say mt-5">
+      <div className="people-say mt-md-4 mt-lg-5">
         <div className="d-flex align-items-center">
           <div className="people-say-left"></div>
           <CustomSlider />

@@ -39,3 +39,29 @@
   width: 100px;
   height: 100px;
 }
+
+@media only screen and (max-width: 992px) {
+  .home-slider .custom-arrow {
+    top: -80px;
+    padding: 8px;
+  }
+  .home-slider .prev-arrow {
+    right: 72px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-slider .custom-arrow {
+    top: -100px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .home-slider .custom-arrow {
+    padding: 5px;
+  }
+  .home-slider .prev-arrow {
+    right: 40px;
+  }
+  .home-slider .next-arrow {
+    right: 0;
+  }
+}

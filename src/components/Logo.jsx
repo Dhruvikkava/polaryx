@@ -1,9 +1,11 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import LogoImg from "../images/polaryx.svg";
 import LogoFooterImg from "../images/polaryx-footer.svg";
 
 const Logo = ({ className = "", isHeader = false }) => {
+  const navigate = useNavigate();
   return (
     <div className={`${className}`}>
       <Typography
@@ -11,7 +13,7 @@ const Logo = ({ className = "", isHeader = false }) => {
         noWrap
         component="a"
         className="d-flex align-items-center"
-        href="/"
+        onClick={() => navigate("/")}
         sx={{
           mr: 2,
           display: { xs: "flex" },

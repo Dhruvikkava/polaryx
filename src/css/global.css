@@ -163,9 +163,6 @@ header {
   width: 30px !important;
   height: 30px !important;
 }
-.social-icon.twitter {
-  padding: 4px;
-}
 .footer-link {
   text-decoration: none;
   color: var(--text-color) !important;
@@ -247,4 +244,144 @@ header {
   align-items: flex-start;
   flex-direction: column;
   width: 50%;
+}
+
+@media only screen and (max-width: 1199px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .hero-content-description {
+    font-size: 24px;
+  }
+  .people-say-left {
+    width: 150px;
+  }
+  .slider-container {
+    width: 90% !important;
+  }
+  .about-us-image img {
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    line-height: 1.2 !important;
+  }
+  p,
+  span,
+  .MuiTypography-root {
+    font-size: 15px !important;
+  }
+  .about-us-image img {
+    height: 215px !important;
+  }
+  .custom-banner .cloud2-img {
+    right: 230px;
+  }
+  .custom-banner .cloud1-img {
+    right: 40px;
+  }
+  .custom-banner .plant-img {
+    right: 400px;
+  }
+  .about-us-welcome-image {
+    max-height: 250px;
+  }
+  .heading {
+    padding-top: 38px;
+    padding-bottom: 20px;
+  }
+  .custom-banner {
+    min-height: 145px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+  .about-us .about-flex {
+    flex-direction: column-reverse;
+  }
+  .logo-image {
+    width: 25px;
+  }
+  .social-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .people-say-left {
+    display: none;
+  }
+  .footer-link {
+    word-break: break-word;
+  }
+  .home-slider .custom-arrow {
+    top: -96px;
+  }
+  .about-us-welcome-image {
+    max-height: 290px;
+    max-width: 510px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .heading {
+    padding-top: 34px;
+    padding-bottom: 17px;
+  }
+  .global-card,
+  .mission-card {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  p,
+  span {
+    font-size: 14px !important;
+  }
+  .about-us-welcome-image {
+    max-width: 90%;
+  }
 }

@@ -1,16 +1,20 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import { useLocation, useNavigate } from "react-router-dom";
+import {
+  Box,
+  Drawer,
+  Toolbar,
+  List,
+  ListItem,
+  ListItemText,
+  IconButton,
+  Collapse,
+  Divider,
+} from "@mui/material";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import Logo from "./Logo";
 
 const pages = [
@@ -33,19 +37,22 @@ function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [productOpen, setProductOpen] = React.useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setDrawerOpen(open);
   };
 
   const handleNavigate = (path) => {
     navigate(path);
-    handleCloseNavMenu();
+    setDrawerOpen(false);
   };
 
   return (
@@ -65,49 +72,75 @@ function Header() {
               }}
             >
               <IconButton
-                size="large"
-                aria-label="menu"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
+                onClick={toggleDrawer(true)}
                 sx={{ color: "#213650" }}
               >
                 <MenuIcon />
               </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{ display: { xs: "block", md: "none" } }}
-              >
-                {pages.map((page) => (
-                  <MenuItem
-                    key={page.name}
-                    onClick={() => handleNavigate(page.path)}
-                  >
-                    <Typography
-                      className={`font-weight-600 text-uppercase ${
-                        page.path === location.pathname ? "active" : ""
-                      }`}
-                      sx={{ textAlign: "center" }}
-                    >
-                      {page.name}
-                    </Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
             </Box>
+
+            {/* Drawer for Mobile Menu */}
+            <Drawer
+              anchor="left"
+              open={drawerOpen}
+              onClose={toggleDrawer(false)}
+            >
+              <Box sx={{ width: 250, p: 2 }}>
+                <List>
+                  {pages.map((page, index) =>
+                    page.name === "Products" ? (
+                      <div key={index}>
+                        <ListItem
+                          button
+                          onClick={() => setProductOpen(!productOpen)}
+                        >
+                          <ListItemText
+                            primaryTypographyProps={{
+                              sx: { fontSize: "0.875rem" },
+                            }}
+                            primary="Products"
+                          />
+                          {productOpen ? <ExpandLess /> : <ExpandMore />}
+                        </ListItem>
+                        <Collapse in={productOpen} timeout="auto" unmountOnExit>
+                          <List component="div" disablePadding>
+                            {productSubMenu.map((subItem, subIndex) => (
+                              <ListItem
+                                button
+                                key={subIndex}
+                                sx={{ pl: 4 }}
+                                onClick={() => handleNavigate(subItem.path)}
+                              >
+                                <ListItemText
+                                  primaryTypographyProps={{
+                                    sx: { fontSize: "0.875rem" },
+                                  }}
+                                  primary={subItem.name}
+                                />
+                              </ListItem>
+                            ))}
+                          </List>
+                        </Collapse>
+                        <Divider />
+                      </div>
+                    ) : (
+                      <ListItem
+                        button
+                        key={index}
+                        onClick={() => handleNavigate(page.path)}
+                      >
+                        <ListItemText
+                          primaryTypographyProps={{
+                            sx: { fontSize: "0.875rem" },
+                          }}
+                          primary={page.name}
+                        />
+                      </ListItem>
+                    )
+                  )}
+                </List>
+              </Box>
+            </Drawer>
 
             {/* Desktop Navigation (Using ListItemButton) */}
             <Box
