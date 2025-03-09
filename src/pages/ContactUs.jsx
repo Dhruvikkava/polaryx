@@ -15,6 +15,7 @@ const ContactUs = () => {
     message: "",
   };
   const [formData, setFormData] = useState(structuredClone(defaultData));
+  const [isMobile] = useState(window.innerWidth < 767);
 
   const [errors, setErrors] = useState({
     fullName: false,
@@ -64,19 +65,23 @@ const ContactUs = () => {
       <ScrollToTop />
       <Progressbar />
       <Custombanner name="Contact Us" heading={"Contact Us"} />
-      <div className="container mt-6 pb-4">
+      <div className="container mt-5 mt-lg-5 mt-xl-6 pb-0 pb-lg-3 pb-xl-4">
         <div className="row">
           <div className="col-md-6 d-flex justify-content-center align-items-center">
-            <img src={ContactImg} alt="contact-us" className="w-75" />
+            <img
+              src={ContactImg}
+              alt="contact-us"
+              className="w-75 mb-3 mb-md-3 mb-lg-0"
+            />
           </div>
           <div className="col-md-6 px-4">
             <Card
               className="px-4 py-3 m-0"
               sx={{ boxShadow: 3, borderRadius: 2 }}
             >
-              <Typography variant="h5" gutterBottom fontWeight="bold">
+              <h4 className="color-primary font-weight-600 mb-3">
                 Get In Touch
-              </Typography>
+              </h4>
               <Typography variant="body2">
                 Reach out for inquiries, quotes, or collaborations!
               </Typography>
@@ -89,6 +94,7 @@ const ContactUs = () => {
                   fullWidth
                   margin="normal"
                   error={errors.fullName}
+                  size={isMobile ? "small" : "medium"}
                   helperText={errors.fullName ? "Full Name is required" : ""}
                 />
                 <TextField
@@ -100,6 +106,7 @@ const ContactUs = () => {
                   fullWidth
                   margin="normal"
                   error={errors.email}
+                  size={isMobile ? "small" : "medium"}
                   helperText={errors.email ? "Email is required" : ""}
                 />
                 <TextField
@@ -110,6 +117,7 @@ const ContactUs = () => {
                   fullWidth
                   margin="normal"
                   error={errors.subject}
+                  size={isMobile ? "small" : "medium"}
                   helperText={errors.subject ? "Subject is required" : ""}
                 />
                 <TextField
@@ -122,6 +130,7 @@ const ContactUs = () => {
                   multiline
                   rows={4}
                   error={errors.message}
+                  size={isMobile ? "small" : "medium"}
                   helperText={errors.message ? "Message is required" : ""}
                 />
                 <button

@@ -12,8 +12,10 @@ const WaterTreatment = () => {
       <Progressbar />
       <Custombanner name="Water Treatment" heading={"Products"} />
       <div className="container">
-        <h3 className="font-weight-600 my-5 text-center">Water Treatment </h3>
-        <div className="row pe-4">
+        <h2 className="font-weight-600 mt-4 mb-3 mt-md-4 mb-md-3 my-lg-4 mt-xl-5 text-center">
+          Water Treatment{" "}
+        </h2>
+        <div className="row justify-content-center pe-4">
           {productData.map(
             (product) =>
               product?.page.includes("Water Treatment") && (

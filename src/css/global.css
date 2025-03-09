@@ -254,7 +254,10 @@ header {
     font-size: 26px;
   }
   h3 {
-    font-size: 21px;
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
   }
   h5 {
     font-size: 18px;
@@ -270,6 +273,13 @@ header {
   }
   .about-us-image img {
     height: 200px !important;
+  }
+  .product-card-desc,
+  .hero-button {
+    font-size: 15px;
+  }
+  .product-card {
+    margin: 20px 15px;
   }
 }
 

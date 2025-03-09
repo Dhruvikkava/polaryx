@@ -39,14 +39,9 @@ const ProductDetail = () => {
         {/* General Information */}
         <Card sx={{ mb: 4, boxShadow: 3 }}>
           <CardContent>
-            <Typography
-              variant="h5"
-              className="font-weight-600 mb-3"
-              color="primary"
-              gutterBottom
-            >
-              General Information
-            </Typography>
+            <h4 className="color-primary font-weight-600 mb-3">
+              General Information{" "}
+            </h4>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <Typography>
@@ -86,14 +81,9 @@ const ProductDetail = () => {
         {/* Applications */}
         <Card sx={{ mb: 4, boxShadow: 3 }}>
           <CardContent>
-            <Typography
-              variant="h5"
-              className="font-weight-600 mb-3"
-              color="primary"
-              gutterBottom
-            >
-              Applications
-            </Typography>
+            <h4 className="color-primary font-weight-600 mb-3">
+              Applications{" "}
+            </h4>
             <Grid container spacing={3}>
               {Object.entries(data.applications).map(([key, values]) => (
                 <Grid item xs={12} md={6} key={key}>
@@ -144,14 +134,9 @@ const ProductDetail = () => {
         {/* Chemical & Physical Properties */}
         <Card sx={{ mb: 4, boxShadow: 3 }}>
           <CardContent>
-            <Typography
-              variant="h5"
-              className="font-weight-600 mb-3"
-              color="primary"
-              gutterBottom
-            >
+            <h4 className="color-primary font-weight-600 mb-3">
               Chemical & Physical Properties
-            </Typography>
+            </h4>
             <TableContainer component={Paper}>
               <Table>
                 <TableBody>
@@ -172,14 +157,9 @@ const ProductDetail = () => {
         {/* Packaging & Storage */}
         <Card sx={{ mb: 4, boxShadow: 3 }}>
           <CardContent>
-            <Typography
-              variant="h5"
-              className="font-weight-600 mb-3"
-              color="primary"
-              gutterBottom
-            >
+            <h4 className="color-primary font-weight-600 mb-3">
               Packaging & Storage
-            </Typography>
+            </h4>
             <Grid container spacing={2}>
               <Grid item xs={12} md={6}>
                 <Typography variant="h6" color="success">
@@ -212,14 +192,9 @@ const ProductDetail = () => {
         {/* Safety & Handling */}
         <Card sx={{ boxShadow: 3 }}>
           <CardContent>
-            <Typography
-              variant="h5"
-              className="font-weight-600 mb-3"
-              color="error"
-              gutterBottom
-            >
+            <h4 className="color-primary font-weight-600 mb-3">
               Safety & Handling
-            </Typography>
+            </h4>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <Typography variant="h6" color="error">

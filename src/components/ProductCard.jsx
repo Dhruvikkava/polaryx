@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = ({ heading, descriptions = [], id }) => {
   const navigate = useNavigate();
   return (
-    <div className="col-md-4 mb-5 product-card-container position-relative d-flex">
+    <div className="col-12 col-sm-10 col-md-5 col-lg-4 mb-5 product-card-container position-relative d-flex">
       <div className="product-card d-flex justify-content-between flex-column">
         <div>
           <h4 className="mb-2">{heading}</h4>
