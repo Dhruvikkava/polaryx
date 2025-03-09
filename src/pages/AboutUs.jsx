@@ -84,7 +84,7 @@ const AboutUs = () => {
                 borderRadius: 3,
                 color: "white",
                 p: 2,
-                background: "#a1bcfb",
+                background: "var(--primary-10)",
               }}
               className="h-100"
             >
@@ -108,7 +108,7 @@ const AboutUs = () => {
                 borderRadius: 3,
                 color: "white",
                 p: 2,
-                background: "#a1bcfb",
+                background: "var(--primary-10)",
               }}
               className="h-100"
             >
@@ -132,7 +132,7 @@ const AboutUs = () => {
                 borderRadius: 3,
                 color: "white",
                 p: 2,
-                background: "#a1bcfb",
+                background: "var(--primary-10)",
               }}
               className="h-100"
             >

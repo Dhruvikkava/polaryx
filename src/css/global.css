@@ -19,6 +19,8 @@
   --primary-6: #ebf6ff;
   --primary-7: #f9f9f9;
   --primary-8: #ecf5ff;
+  --primary-9: #0e5f95;
+  --primary-10: #a1bcfb;
 
   --black-1: #000;
   --black-2: #616b7a;
@@ -61,7 +63,7 @@ h1 {
 }
 .logo-image-text {
   font-family: "Open Sans", sans-serif !important;
-  color: #0e5f95;
+  color: var(--primary-9);
   letter-spacing: 1.5px;
 }
 .color-white {
