@@ -9,6 +9,7 @@ import VisionImg from "../images/vision.png";
 import Progressbar from "../components/Progressbar";
 import ScrollToTop from "../components/ScrollToTop";
 import Heading from "../components/Heading";
+import SEO from "../components/SEO";
 
 const AboutUs = () => {
   const strongPoints = [
@@ -22,6 +23,10 @@ const AboutUs = () => {
   ];
   return (
     <div className="page-wrapper">
+      <SEO
+        title="About Us - Polaryx International"
+        description="Polaryx International specializes in exporting high-quality chemicals, pharmaceuticals, and spices worldwide, ensuring reliability and excellence in every shipment."
+      />
       <ScrollToTop />
       <Progressbar />
       <Custombanner name="About Us" heading="About Us" />

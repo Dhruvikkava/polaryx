@@ -3,10 +3,15 @@ import { Container, Typography, Box } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import Progressbar from "../components/Progressbar";
 import { email } from "../constants";
+import SEO from "../components/SEO";
 
 const PrivacyPolicy = () => {
   return (
     <div className="page-wrapper">
+      <SEO
+        title="Privacy Policy – Polaryx International"
+        description="Read Polaryx International’s Privacy Policy to understand how we collect, use, and protect your personal information. Your privacy is our priority."
+      />
       <ScrollToTop />
       <Progressbar />
       <Container maxWidth="lg" sx={{ py: 4 }}>

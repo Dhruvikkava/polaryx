@@ -6,6 +6,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Progressbar from "../components/Progressbar";
 import Custombanner from "../components/Custombanner";
 import ContactImg from "../images/contact-us.png";
+import SEO from "../components/SEO";
 
 const ContactUs = () => {
   const defaultData = {
@@ -62,6 +63,10 @@ const ContactUs = () => {
 
   return (
     <div className="page-wrapper">
+      <SEO
+        title="Contact Us – Get in Touch with Polaryx International"
+        description="Have questions or business inquiries? Contact Polaryx International for premium exports of chemicals, pharmaceuticals, and spices. Reach out to us today!"
+      />
       <ScrollToTop />
       <Progressbar />
       <Custombanner name="Contact Us" heading={"Contact Us"} />

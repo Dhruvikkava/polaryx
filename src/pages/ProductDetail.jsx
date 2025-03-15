@@ -21,6 +21,7 @@ import Progressbar from "../components/Progressbar";
 import Custombanner from "../components/Custombanner";
 import { productData } from "../constants";
 import ScrollToTop from "../components/ScrollToTop";
+import SEO from "../components/SEO";
 
 const ProductDetail = () => {
   const [searchParams] = useSearchParams();
@@ -32,6 +33,10 @@ const ProductDetail = () => {
 
   return (
     <div className="page-wrapper">
+      <SEO
+        title={`${filteredProduct?.heading} – Specifications & Export Details | Polaryx International`}
+        description={`Get detailed information on ${filteredProduct?.heading}, including specifications, applications, and packaging. Polaryx International ensures top-quality exports with global delivery.`}
+      />
       <ScrollToTop />
       <Progressbar />
       <Custombanner name={filteredProduct?.heading} heading={"Products"} />

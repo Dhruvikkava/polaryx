@@ -4,10 +4,15 @@ import Custombanner from "../components/Custombanner";
 import ProductCard from "../components/ProductCard";
 import { productData } from "../constants";
 import ScrollToTop from "../components/ScrollToTop";
+import SEO from "../components/SEO";
 
 const PurifierAgent = () => {
   return (
     <div className="page-wrapper">
+      <SEO
+        title="Products – Polaryx International"
+        description="Discover high-quality chemicals, pharmaceuticals, and spices at Polaryx International. We export premium-grade products worldwide with assured quality and reliability."
+      />
       <ScrollToTop />
       <Progressbar />
       <Custombanner name="Purifier Agent" heading={"Products"} />

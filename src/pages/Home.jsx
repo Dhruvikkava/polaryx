@@ -16,11 +16,16 @@ import CustomSlider from "../components/CustomSlider";
 import ProductTab from "../components/ProductTab";
 import Progressbar from "../components/Progressbar";
 import ScrollToTop from "../components/ScrollToTop";
+import SEO from "../components/SEO";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
     <div className="page-wrapper">
+      <SEO
+        title="Home - Polaryx International"
+        description="Polaryx International is a trusted global exporter of high-quality chemicals, pharmaceuticals, and spices. We ensure top-tier products with seamless worldwide delivery. Contact us for premium exports!"
+      />
       <ScrollToTop />
       <Progressbar />
       <div className="hero-section">
