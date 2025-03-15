@@ -39,6 +39,17 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const [productOpen, setProductOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) setScrolled(true);
+      else setScrolled(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -56,12 +67,28 @@ function Header() {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#ffffff" }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        backgroundColor: scrolled ? "transparent" : "#ffffff",
+        boxShadow: scrolled ? "none" : "var(--Paper-shadow)",
+      }}
+    >
       <div className="container">
-        <Toolbar disableGutters>
-          <div className="d-flex justify-content-between align-items-center w-100">
+        <Toolbar
+          disableGutters
+          sx={{
+            backgroundColor: "rgba(255,255,255,0.8)",
+            backdropFilter: "blur(8px)",
+            transition: "all 0.3s ease-in-out",
+            borderRadius: "15px",
+            margin: scrolled ? "10px auto 0 auto" : "0",
+            boxShadow: scrolled ? "0px 4px 10px rgba(0, 0, 0, 0.1)" : "none",
+          }}
+        >
+          <div className="d-flex justify-content-between align-items-center w-100 px-3">
             {/* Logo */}
-            <Logo isHeader={true} />
+            <Logo />
 
             {/* Mobile Menu */}
             <Box

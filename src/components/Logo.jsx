@@ -1,10 +1,9 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import LogoImg from "../images/polaryx.svg";
-import LogoFooterImg from "../images/polaryx-footer.svg";
+import LogoImg from "../images/polaryx.png";
 
-const Logo = ({ className = "", isHeader = false }) => {
+const Logo = ({ className = "" }) => {
   const navigate = useNavigate();
   return (
     <div className={`${className}`}>
@@ -12,7 +11,7 @@ const Logo = ({ className = "", isHeader = false }) => {
         variant="h6"
         noWrap
         component="a"
-        className="d-flex align-items-center"
+        className="d-flex align-items-center cursor-pointer"
         onClick={() => navigate("/")}
         sx={{
           mr: 2,
@@ -24,12 +23,8 @@ const Logo = ({ className = "", isHeader = false }) => {
           textDecoration: "none",
         }}
       >
-        <img
-          className="logo-image"
-          src={isHeader ? LogoImg : LogoFooterImg}
-          alt="logo"
-        />
-        <p className="fw-bold ms-2 logo-image-text">Polaryx</p>
+        <img className="logo-image" src={LogoImg} alt="logo" />
+        <p className="fw-bold ms-1 logo-image-text">Polaryx</p>
       </Typography>
     </div>
   );
