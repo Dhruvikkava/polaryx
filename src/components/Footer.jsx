@@ -9,11 +9,12 @@ import LinkedIn from "../images/linkedin.png";
 import Facebook from "../images/facebook.png";
 import Instagram from "../images/instagram.svg";
 import Logo from "./Logo";
-import { email } from "../constants";
+import { email, productSubMenu } from "../constants";
 
 const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const handleNavigate = (path) => {
     navigate(path);
@@ -126,13 +127,33 @@ const Footer = () => {
                   About Us
                 </p>
               </div>
-              <div className="d-flex align-items-center mb-1 mb-sm-1 mb-md-1 mb-lg-3">
+              <div
+                className="d-flex align-items-center mb-1 mb-sm-1 mb-md-1 mb-lg-3"
+                onMouseLeave={() => setIsMenuOpen(false)}
+              >
                 <DoubleArrowIcon className="color-mat-black" />
                 <p
-                  className="ms-2 underline-hover cursor-pointer"
-                  onClick={() => handleNavigate("/about-us")}
+                  className="ms-2 underline-hover cursor-pointer position-relative"
+                  onMouseEnter={() => setIsMenuOpen(true)}
                 >
                   Products
+                  {isMenuOpen && (
+                    <div
+                      className="custom-dropdown px-3"
+                      onMouseEnter={() => setIsMenuOpen(true)}
+                      onMouseLeave={() => setIsMenuOpen(false)}
+                    >
+                      {productSubMenu.map((subItem) => (
+                        <div
+                          key={subItem.name}
+                          className="dropdown-item font-weight-600 text-uppercase"
+                          onClick={() => handleNavigate(subItem.path)}
+                        >
+                          <p className="underline-hover">{subItem.name}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </p>
               </div>
               <div className="d-flex align-items-center mb-1 mb-sm-1 mb-md-1 mb-lg-3">

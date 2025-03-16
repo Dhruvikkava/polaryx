@@ -16,21 +16,13 @@ import {
 } from "@mui/material";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import Logo from "./Logo";
+import { productSubMenu } from "../constants";
 
 const pages = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about-us" },
   { name: "Products", path: "/products" },
   { name: "Contact Us", path: "/contact-us" },
-];
-
-const productSubMenu = [
-  { name: "Water treatment", path: "/products/water-treatment" },
-  { name: "Cosmetics & Personal Care", path: "/products/cosmetic" },
-  { name: "Purifier Agent", path: "/products/purifier-agent" },
-  { name: "Food & Beverages", path: "/products/food-beverages" },
-  { name: "Solvents", path: "/products/solvents" },
-  { name: "Agro Chemicals", path: "/products/agro-chemical" },
 ];
 
 function Header() {

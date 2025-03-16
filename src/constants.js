@@ -1,5 +1,14 @@
 export const email = "polaryx.international2024@gmail.com";
 
+export const productSubMenu = [
+  { name: "Water treatment", path: "/products/water-treatment" },
+  { name: "Cosmetics & Personal Care", path: "/products/cosmetic" },
+  { name: "Purifier Agent", path: "/products/purifier-agent" },
+  { name: "Food & Beverages", path: "/products/food-beverages" },
+  { name: "Solvents", path: "/products/solvents" },
+  { name: "Agro Chemicals", path: "/products/agro-chemical" },
+];
+
 export const productData = [
   {
     id: 1,
