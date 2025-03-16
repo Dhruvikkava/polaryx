@@ -4,10 +4,10 @@ import RoomIcon from "@mui/icons-material/Room";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
-import LinkedIn from "../images/linkedin.png";
-import Facebook from "../images/facebook.png";
-import Instagram from "../images/instagram.svg";
 import Logo from "./Logo";
 import { email, productSubMenu } from "../constants";
 
@@ -35,8 +35,8 @@ const Footer = () => {
           <div className="row">
             <div className="col-sm-6 col-lg-3 mb-xs-3 mb-3 mb-md-3">
               <Logo className="mb-xs-2 mb-2 mb-md-2 mb-lg-3" isHeader={false} />
-              <p className="mb-xs-2 mb-2 mb-md-2 mb-lg-3">
-                ISO 9001:2015 Certified Company
+              <p className="mb-xs-1 mb-1 mb-md-1 mb-lg-2 ps-1 font-weight-600">
+                Follow us on
               </p>
               <div className="d-flex">
                 <div
@@ -47,7 +47,7 @@ const Footer = () => {
                     )
                   }
                 >
-                  <img src={LinkedIn} alt="linkedin" className="social-icon" />
+                  <LinkedInIcon fontSize="large" />
                 </div>
                 <div
                   className="social-icon-wrap cursor-pointer"
@@ -57,7 +57,7 @@ const Footer = () => {
                     )
                   }
                 >
-                  <img src={Facebook} alt="facebook" className="social-icon" />
+                  <FacebookIcon fontSize="large" />
                 </div>
                 <div
                   className="social-icon-wrap cursor-pointer"
@@ -65,11 +65,7 @@ const Footer = () => {
                     handleClickUrl("https://www.instagram.com/polaryx_int/")
                   }
                 >
-                  <img
-                    src={Instagram}
-                    alt="instagram"
-                    className="social-icon"
-                  />
+                  <InstagramIcon fontSize="large" />
                 </div>
               </div>
             </div>

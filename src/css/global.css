@@ -156,14 +156,10 @@ header {
   margin-top: 48px;
 }
 .social-icon-wrap {
-  padding: 8px;
-  border: 1px solid var(--black-1);
+  padding: 7px;
+  border: 1px dashed var(--black-1);
   border-radius: 50%;
   margin-right: 12px;
-}
-.social-icon {
-  width: 30px !important;
-  height: 30px !important;
 }
 .footer-link {
   text-decoration: none;
@@ -342,10 +338,6 @@ header {
   }
   .logo-image {
     width: 25px;
-  }
-  .social-icon {
-    width: 24px !important;
-    height: 24px !important;
   }
   .people-say-left {
     display: none;
