@@ -124,7 +124,7 @@ const Footer = () => {
                 </p>
               </div>
               <div
-                className="d-flex align-items-center mb-1 mb-sm-1 mb-md-1 mb-lg-3"
+                className="d-flex align-items-center pb-1 pb-sm-1 pb-md-1 pb-lg-3"
                 onMouseLeave={() => setIsMenuOpen(false)}
               >
                 <DoubleArrowIcon className="color-mat-black" />
